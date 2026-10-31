@@ -10,7 +10,7 @@ locale = "en_US"
 
 [site]
 title = "Voxcade · a voxel arcade engine"
-description = "Voxcade is a game engine for small arcade games made of voxels you can blow apart: every classic 2D genre lifted into 3D, written in Lua, played alone or together."
+description = "Voxcade is a game engine that lifts every kind of game there was in 2D into voxels you can blow apart: shooters, jump & runs, RPGs, adventures, strategy and more, written in Lua, played alone or together."
 skip = "Skip to the content"
 
 [nav]
@@ -22,7 +22,7 @@ label = "Sections"
 
 [hero]
 tagline = "Every classic 2D genre, in voxels."
-intro = "Voxcade is a game engine for small, fast arcade games made of 3D pixels you can blow apart. Write them in Lua, shape them in its editors, and play them alone, side by side at one screen, or over the home network."
+intro = "Voxcade is a game engine that lifts every kind of game there was in 2D into the third dimension: shooters, jump &amp; runs, RPGs, adventures, strategy, racing, simulations, all made of voxels you can blow apart. Write them in Lua, shape them in its own editors, and play them alone, side by side at one screen, or together over the network."
 status = "In development · not released yet"
 video = "Scenes from the five games that come with Voxcade, drawn by the engine from their recorded runs."
 menu = "Where to"
@@ -60,7 +60,7 @@ agent_text = "The IDE's console can run Claude Code, which sees the game you are
 
 [together]
 title = "Play together"
-lead = "Up to four players at one screen, as at an arcade machine: pads and a shared keyboard, one camera holding the group together. Over the home network every machine plays the same game in step, and a friend can join late."
+lead = "Up to four players at one screen, as at an arcade machine: pads and a shared keyboard, one camera holding the group together. Over the network every machine plays the same game in step, and friends can join a game already running."
 point_forms = "Co-op, versus or teams: each game decides."
 point_seats = "A second player joins with START on a pad, or Return at the keyboard."
 point_record = "Every run is recorded, network games too."
@@ -80,14 +80,17 @@ music_title = "Music as text"
 music_text = "Songs are written in MML for SID-like voices, or composed from chord progressions, and a game can move on their beat."
 light_title = "Lit like pixel art"
 light_text = "Voxel-exact shadows, glow, glass and metal. Light and shade come from the engine, never painted into the models."
-native_title = "Native and light"
-native_text = "Rust, wgpu and SDL3 on Vulkan, DirectX 12 or Metal, with quality levels for older machines."
+native_title = "Native and fast"
+native_text = "Rust, wgpu and SDL3 on Vulkan, DirectX 12 or Metal. Smooth on older machines too, with quality levels for the rest."
 lua_title = "Lua or Rust"
 lua_text = "Games are Lua in a safe, deterministic sandbox, in the spirit of LÖVE; a game can also be written in Rust on the engine alone."
 
 [next]
 title = "What's next"
-text = "Voxcade is not released yet. Next comes making games together: GAME JAM, up to four people in one IDE, typing in the same files, putting ideas up and voting on them, while an agent builds what the group agreed on."
+text = "Voxcade is not released yet. Coming next:"
+internet = "Playing over the internet, with a server of our own that brings players together."
+jam = "GAME JAM: up to four people in one IDE, typing in the same files, putting ideas up and voting on them, while an agent builds what the group agreed on."
+genres = "Ready-made rules for more genres: RPGs, adventures, strategy, racing."
 follow = "News follows here and on <a href=\"https://sacrvm.dev/blog/\">sacrvm.dev</a>."
 
 [footer]

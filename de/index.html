@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Voxcade · eine Voxel-Arcade-Engine</title>
-<meta name="description" content="Voxcade ist eine Spiele-Engine für kleine Arcade-Spiele aus Voxeln, die man zerlegen kann: jedes klassische 2D-Genre in 3D, geschrieben in Lua, allein oder zusammen gespielt.">
+<meta name="description" content="Voxcade ist eine Spiele-Engine, die jede Art von Spiel, die es in 2D gab, in Voxel hebt, die man zerlegen kann: Shooter, Jump & Runs, Rollenspiele, Adventures, Strategie und mehr, geschrieben in Lua, allein oder zusammen gespielt.">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#050509">
 <link rel="canonical" href="https://voxca.de/de/">
@@ -14,7 +14,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Voxcade">
 <meta property="og:title" content="Voxcade · eine Voxel-Arcade-Engine">
-<meta property="og:description" content="Voxcade ist eine Spiele-Engine für kleine Arcade-Spiele aus Voxeln, die man zerlegen kann: jedes klassische 2D-Genre in 3D, geschrieben in Lua, allein oder zusammen gespielt.">
+<meta property="og:description" content="Voxcade ist eine Spiele-Engine, die jede Art von Spiel, die es in 2D gab, in Voxel hebt, die man zerlegen kann: Shooter, Jump & Runs, Rollenspiele, Adventures, Strategie und mehr, geschrieben in Lua, allein oder zusammen gespielt.">
 <meta property="og:url" content="https://voxca.de/de/">
 <meta property="og:locale" content="de_DE">
 <meta property="og:image" content="https://voxca.de/assets/img/og.png">
@@ -62,7 +62,7 @@
 
       <div class="hero-foot">
         <div>
-          <p class="intro">Voxcade ist eine Spiele-Engine für kleine, schnelle Arcade-Spiele aus 3D-Pixeln, die man in Stücke schießen kann. Du schreibst sie in Lua, formst sie in den eigenen Editoren und spielst sie allein, zu mehreren an einem Bildschirm oder im Heimnetz.</p>
+          <p class="intro">Voxcade ist eine Spiele-Engine, die jede Art von Spiel, die es in 2D gab, in die dritte Dimension hebt: Shooter, Jump &amp; Runs, Rollenspiele, Adventures, Strategie, Rennspiele, Simulationen, alles aus Voxeln, die man in Stücke schießen kann. Du schreibst sie in Lua, formst sie in den eigenen Editoren und spielst sie allein, zu mehreren an einem Bildschirm oder zusammen übers Netz.</p>
           <p class="status"><span class="blink" aria-hidden="true"></span>In Entwicklung · noch nicht erschienen</p>
         </div>
         <nav class="menu" aria-label="Wohin">
@@ -183,7 +183,7 @@
       </figure>
       <div>
         <h2>Zusammen spielen</h2>
-        <p class="lead">Bis zu vier Spieler an einem Bildschirm, wie am Automaten: Gamepads und eine geteilte Tastatur, eine Kamera hält die Gruppe zusammen. Im Heimnetz spielt jeder Rechner dasselbe Spiel im Gleichschritt, und Freunde können später dazukommen.</p>
+        <p class="lead">Bis zu vier Spieler an einem Bildschirm, wie am Automaten: Gamepads und eine geteilte Tastatur, eine Kamera hält die Gruppe zusammen. Übers Netz spielt jeder Rechner dasselbe Spiel im Gleichschritt, und Freunde können in ein laufendes Spiel einsteigen.</p>
         <ul class="points">
           <li>Miteinander, gegeneinander oder in Teams: Das entscheidet jedes Spiel.</li>
           <li>Ein zweiter Spieler steigt mit START am Gamepad ein oder mit Return an der Tastatur.</li>
@@ -203,7 +203,7 @@
         <div><h3>Alles geht kaputt</h3><p>Die Welt besteht aus Voxeln: Schieß ein Loch hinein, und was abgetrennt ist, fällt.</p></div>
         <div><h3>Musik als Text</h3><p>Lieder werden in MML für SID-artige Stimmen geschrieben oder aus Akkordfolgen komponiert, und ein Spiel kann sich nach ihrem Takt richten.</p></div>
         <div><h3>Beleuchtet wie Pixel-Art</h3><p>Voxelgenaue Schatten, Leuchten, Glas und Metall. Licht und Schatten kommen von der Engine, nie in die Modelle gemalt.</p></div>
-        <div><h3>Nativ und leicht</h3><p>Rust, wgpu und SDL3 auf Vulkan, DirectX 12 oder Metal, mit Qualitätsstufen für ältere Rechner.</p></div>
+        <div><h3>Nativ und schnell</h3><p>Rust, wgpu und SDL3 auf Vulkan, DirectX 12 oder Metal. Flüssig auch auf älteren Rechnern, mit Qualitätsstufen für den Rest.</p></div>
         <div><h3>Lua oder Rust</h3><p>Spiele sind Lua in einer sicheren, deterministischen Sandbox, im Geist von LÖVE; ein Spiel kann auch in Rust direkt auf der Engine entstehen.</p></div>
       </div>
     </div>
@@ -213,8 +213,13 @@
     <div class="wrap">
       <div class="next">
         <h2>Was als Nächstes kommt</h2>
-        <p>Voxcade ist noch nicht erschienen. Als Nächstes kommt das gemeinsame Spielemachen: GAME JAM, bis zu vier Leute in einer IDE, die in denselben Dateien tippen, Ideen einbringen und darüber abstimmen, während ein Agent baut, worauf sich die Gruppe geeinigt hat.</p>
-        <p>Neuigkeiten folgen hier und auf <a href="https://sacrvm.dev/blog/">sacrvm.dev</a>.</p>
+        <p>Voxcade ist noch nicht erschienen. Als Nächstes kommen:</p>
+        <ul class="points">
+          <li>Spielen übers Internet, mit einem eigenen Server, der Spieler zusammenbringt.</li>
+          <li>GAME JAM: bis zu vier Leute in einer IDE, die in denselben Dateien tippen, Ideen einbringen und darüber abstimmen, während ein Agent baut, worauf sich die Gruppe geeinigt hat.</li>
+          <li>Fertige Regeln für weitere Genres: Rollenspiele, Adventures, Strategie, Rennspiele.</li>
+        </ul>
+        <p class="follow">Neuigkeiten folgen hier und auf <a href="https://sacrvm.dev/blog/">sacrvm.dev</a>.</p>
       </div>
     </div>
   </section>

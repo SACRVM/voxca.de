@@ -9,7 +9,7 @@ locale = "de_DE"
 
 [site]
 title = "Voxcade · eine Voxel-Arcade-Engine"
-description = "Voxcade ist eine Spiele-Engine für kleine Arcade-Spiele aus Voxeln, die man zerlegen kann: jedes klassische 2D-Genre in 3D, geschrieben in Lua, allein oder zusammen gespielt."
+description = "Voxcade ist eine Spiele-Engine, die jede Art von Spiel, die es in 2D gab, in Voxel hebt, die man zerlegen kann: Shooter, Jump & Runs, Rollenspiele, Adventures, Strategie und mehr, geschrieben in Lua, allein oder zusammen gespielt."
 skip = "Zum Inhalt springen"
 
 [nav]
@@ -21,7 +21,7 @@ label = "Abschnitte"
 
 [hero]
 tagline = "Jedes klassische 2D-Genre, in Voxeln."
-intro = "Voxcade ist eine Spiele-Engine für kleine, schnelle Arcade-Spiele aus 3D-Pixeln, die man in Stücke schießen kann. Du schreibst sie in Lua, formst sie in den eigenen Editoren und spielst sie allein, zu mehreren an einem Bildschirm oder im Heimnetz."
+intro = "Voxcade ist eine Spiele-Engine, die jede Art von Spiel, die es in 2D gab, in die dritte Dimension hebt: Shooter, Jump &amp; Runs, Rollenspiele, Adventures, Strategie, Rennspiele, Simulationen, alles aus Voxeln, die man in Stücke schießen kann. Du schreibst sie in Lua, formst sie in den eigenen Editoren und spielst sie allein, zu mehreren an einem Bildschirm oder zusammen übers Netz."
 status = "In Entwicklung · noch nicht erschienen"
 video = "Szenen aus den fünf Spielen, die Voxcade mitbringt, gezeichnet von der Engine aus aufgenommenen Läufen."
 menu = "Wohin"
@@ -59,7 +59,7 @@ agent_text = "In der Konsole der IDE kann Claude Code laufen und sieht das Spiel
 
 [together]
 title = "Zusammen spielen"
-lead = "Bis zu vier Spieler an einem Bildschirm, wie am Automaten: Gamepads und eine geteilte Tastatur, eine Kamera hält die Gruppe zusammen. Im Heimnetz spielt jeder Rechner dasselbe Spiel im Gleichschritt, und Freunde können später dazukommen."
+lead = "Bis zu vier Spieler an einem Bildschirm, wie am Automaten: Gamepads und eine geteilte Tastatur, eine Kamera hält die Gruppe zusammen. Übers Netz spielt jeder Rechner dasselbe Spiel im Gleichschritt, und Freunde können in ein laufendes Spiel einsteigen."
 point_forms = "Miteinander, gegeneinander oder in Teams: Das entscheidet jedes Spiel."
 point_seats = "Ein zweiter Spieler steigt mit START am Gamepad ein oder mit Return an der Tastatur."
 point_record = "Jeder Lauf wird aufgenommen, auch Netzwerkspiele."
@@ -79,14 +79,17 @@ music_title = "Musik als Text"
 music_text = "Lieder werden in MML für SID-artige Stimmen geschrieben oder aus Akkordfolgen komponiert, und ein Spiel kann sich nach ihrem Takt richten."
 light_title = "Beleuchtet wie Pixel-Art"
 light_text = "Voxelgenaue Schatten, Leuchten, Glas und Metall. Licht und Schatten kommen von der Engine, nie in die Modelle gemalt."
-native_title = "Nativ und leicht"
-native_text = "Rust, wgpu und SDL3 auf Vulkan, DirectX 12 oder Metal, mit Qualitätsstufen für ältere Rechner."
+native_title = "Nativ und schnell"
+native_text = "Rust, wgpu und SDL3 auf Vulkan, DirectX 12 oder Metal. Flüssig auch auf älteren Rechnern, mit Qualitätsstufen für den Rest."
 lua_title = "Lua oder Rust"
 lua_text = "Spiele sind Lua in einer sicheren, deterministischen Sandbox, im Geist von LÖVE; ein Spiel kann auch in Rust direkt auf der Engine entstehen."
 
 [next]
 title = "Was als Nächstes kommt"
-text = "Voxcade ist noch nicht erschienen. Als Nächstes kommt das gemeinsame Spielemachen: GAME JAM, bis zu vier Leute in einer IDE, die in denselben Dateien tippen, Ideen einbringen und darüber abstimmen, während ein Agent baut, worauf sich die Gruppe geeinigt hat."
+text = "Voxcade ist noch nicht erschienen. Als Nächstes kommen:"
+internet = "Spielen übers Internet, mit einem eigenen Server, der Spieler zusammenbringt."
+jam = "GAME JAM: bis zu vier Leute in einer IDE, die in denselben Dateien tippen, Ideen einbringen und darüber abstimmen, während ein Agent baut, worauf sich die Gruppe geeinigt hat."
+genres = "Fertige Regeln für weitere Genres: Rollenspiele, Adventures, Strategie, Rennspiele."
 follow = "Neuigkeiten folgen hier und auf <a href=\"https://sacrvm.dev/blog/\">sacrvm.dev</a>."
 
 [footer]

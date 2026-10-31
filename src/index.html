@@ -53,7 +53,7 @@
       <figure class="screen">
         <video class="attract" muted loop playsinline preload="metadata" poster="/assets/img/hero-poster.webp"
                width="1280" height="720" aria-label="{{hero.video}}">
-          <source src="/assets/video/hero.mp4" type="video/mp4">
+          <source src="{{media.hero}}" type="video/mp4">
         </video>
         <figcaption>{{hero.video}}</figcaption>
       </figure>
@@ -102,7 +102,7 @@
           </div>
         </article>
         <article class="game" style="--c: var(--bunnyfarm)">
-          <img src="/assets/img/bunnyfarm.webp" width="1280" height="720" loading="lazy" alt="{{games.shot}} BunnyFarm">
+          <img src="{{media.bunnyfarm}}" width="1280" height="720" loading="lazy" alt="{{games.shot}} BunnyFarm">
           <div class="game-text">
             <h3>BunnyFarm</h3>
             <p class="genre">{{games.bunnyfarm_genre}}</p>

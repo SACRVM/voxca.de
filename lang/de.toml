@@ -7,6 +7,11 @@ name = "Deutsch"
 dir = "de/"
 locale = "de_DE"
 
+# Film und Bilder in dieser Sprache (BunnyFarm spricht sie).
+[media]
+hero = "/assets/video/hero-de.mp4"
+bunnyfarm = "/assets/img/bunnyfarm-de.webp"
+
 [site]
 title = "Voxcade · eine Voxel-Arcade-Engine"
 description = "Voxcade ist eine Spiele-Engine, die jede Art von Spiel, die es in 2D gab, in Voxel hebt, die man zerlegen kann: Shooter, Jump & Runs, Rollenspiele, Adventures, Strategie und mehr, geschrieben in Lua, allein oder zusammen gespielt."

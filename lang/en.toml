@@ -8,6 +8,11 @@ name = "English"
 dir = ""              # where its pages go, below the root
 locale = "en_US"
 
+# The film and pictures in this language (BunnyFarm speaks it).
+[media]
+hero = "/assets/video/hero-en.mp4"
+bunnyfarm = "/assets/img/bunnyfarm-en.webp"
+
 [site]
 title = "Voxcade · a voxel arcade engine"
 description = "Voxcade is a game engine that lifts every kind of game there was in 2D into voxels you can blow apart: shooters, jump & runs, RPGs, adventures, strategy and more, written in Lua, played alone or together."

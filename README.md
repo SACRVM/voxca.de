@@ -41,7 +41,10 @@ voxcade ide games/voxkeep --shot shots/ide.png --play 600 --size 1600x900
   (`c.title_screen.logo = { "VOXCADE" }`, `logo_colors = { "#ffb347" }`),
   shot with `--screen title`, cut out from its dark ground. Pictures go in
   as WebP; the film is the five games' clips joined with fades, H.264
-  without sound.
+  without sound. BunnyFarm speaks English, German and French: the film
+  and its picture come in the page's language (`media` in each
+  `lang/*.toml`), from a copy of its demo replay with the `language`
+  line changed.
 
 ## Credits
 

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voxcade · eine Voxel-Arcade-Engine</title>
+<meta name="description" content="Voxcade ist eine Spiele-Engine für kleine Arcade-Spiele aus Voxeln, die man zerlegen kann: jedes klassische 2D-Genre in 3D, geschrieben in Lua, allein oder zusammen gespielt.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#050509">
+<link rel="canonical" href="https://voxca.de/de/">
+<link rel="alternate" hreflang="en" href="https://voxca.de/">
+<link rel="alternate" hreflang="de" href="https://voxca.de/de/">
+<link rel="alternate" hreflang="x-default" href="https://voxca.de/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Voxcade">
+<meta property="og:title" content="Voxcade · eine Voxel-Arcade-Engine">
+<meta property="og:description" content="Voxcade ist eine Spiele-Engine für kleine Arcade-Spiele aus Voxeln, die man zerlegen kann: jedes klassische 2D-Genre in 3D, geschrieben in Lua, allein oder zusammen gespielt.">
+<meta property="og:url" content="https://voxca.de/de/">
+<meta property="og:locale" content="de_DE">
+<meta property="og:image" content="https://voxca.de/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="preload" href="/assets/fonts/voxcade-pixel.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#games">Zum Inhalt springen</a>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="/de/">VOXCADE</a>
+    <nav class="nav" aria-label="Abschnitte">
+      <a href="#games">Spiele</a>
+      <a href="#make">Selbst machen</a>
+      <a href="#together">Zusammen</a>
+      <a href="#inside">Technik</a>
+    </nav>
+    <nav class="langs" aria-label="Sprache"><a href="/" hreflang="en" lang="en" title="English">EN</a> <a href="/de/" hreflang="de" lang="de" aria-current="true" title="Deutsch">DE</a></nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <h1 class="logo">
+        <img src="/assets/img/logo-900.webp" srcset="/assets/img/logo-900.webp 900w, /assets/img/logo-1800.webp 1800w"
+             sizes="(max-width: 960px) 92vw, 900px" width="900" height="163" alt="Voxcade">
+      </h1>
+      <p class="tagline">Jedes klassische 2D-Genre, in Voxeln.</p>
+
+      <figure class="screen">
+        <video class="attract" muted loop playsinline preload="metadata" poster="/assets/img/hero-poster.webp"
+               width="1280" height="720" aria-label="Szenen aus den fünf Spielen, die Voxcade mitbringt, gezeichnet von der Engine aus aufgenommenen Läufen.">
+          <source src="/assets/video/hero.mp4" type="video/mp4">
+        </video>
+        <figcaption>Szenen aus den fünf Spielen, die Voxcade mitbringt, gezeichnet von der Engine aus aufgenommenen Läufen.</figcaption>
+      </figure>
+
+      <div class="hero-foot">
+        <div>
+          <p class="intro">Voxcade ist eine Spiele-Engine für kleine, schnelle Arcade-Spiele aus 3D-Pixeln, die man in Stücke schießen kann. Du schreibst sie in Lua, formst sie in den eigenen Editoren und spielst sie allein, zu mehreren an einem Bildschirm oder im Heimnetz.</p>
+          <p class="status"><span class="blink" aria-hidden="true"></span>In Entwicklung · noch nicht erschienen</p>
+        </div>
+        <nav class="menu" aria-label="Wohin">
+          <a href="#games">Die Spiele</a>
+          <a href="#make">Ein Spiel machen</a>
+          <a href="#together">Zusammen spielen</a>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <section id="games" class="section">
+    <div class="wrap">
+      <h2>Spiele</h2>
+      <p class="lead">Fünf Spiele kommen mit der Engine, jedes ein Ordner aus Lua und Voxeln, jedes ein anderes Genre.</p>
+      <div class="games">
+        <article class="game game-wide" style="--c: var(--moreblood)">
+          <img src="/assets/img/moreblood.webp" width="1280" height="720" loading="lazy" alt="Bild aus More Blood">
+          <div class="game-text">
+            <h3>More Blood</h3>
+            <p class="genre">Run-and-Gun-Shooter</p>
+            <p>Kämpf dich durch die Wüste, befrei die Geiseln und hol den Kampfhubschrauber vom Himmel. Hütten, Wachtürme und der Boden selbst zerfallen in Voxel.</p>
+          </div>
+        </article>
+        <article class="game" style="--c: var(--voxkeep)">
+          <img src="/assets/img/voxkeep.webp" width="1280" height="720" loading="lazy" alt="Bild aus Voxkeep">
+          <div class="game-text">
+            <h3>Voxkeep</h3>
+            <p class="genre">Jump &amp; Run</p>
+            <p>Eine Burg bei Nacht: sechs Räume mit Fledermäusen, die man abpassen muss, Fähren über Stacheln, Hebel, Aufzüge und eine Kiste, die eine Falltür offen hält.</p>
+          </div>
+        </article>
+        <article class="game" style="--c: var(--pulsar)">
+          <img src="/assets/img/pulsar.webp" width="1280" height="720" loading="lazy" alt="Bild aus Pulsar">
+          <div class="game-text">
+            <h3>Pulsar</h3>
+            <p class="genre">Weltraum-Shooter</p>
+            <p>Die Gegnerwellen kommen im Takt der Musik. Flieg allein oder zu zweit: zwei Schiffe, jedes mit eigenem Schild, eigenen Bomben und eigenem Punktestand.</p>
+          </div>
+        </article>
+        <article class="game" style="--c: var(--bunnyfarm)">
+          <img src="/assets/img/bunnyfarm.webp" width="1280" height="720" loading="lazy" alt="Bild aus BunnyFarm">
+          <div class="game-text">
+            <h3>BunnyFarm</h3>
+            <p class="genre">Farmspiel</p>
+            <p>Säen, ernten, kochen und Aufträge erfüllen, Hühner halten und den Zaun flicken, bevor nachts der Wolf kommt. Auf Deutsch, Englisch und Französisch.</p>
+          </div>
+        </article>
+        <article class="game" style="--c: var(--sokovox)">
+          <img src="/assets/img/sokovox.webp" width="1280" height="720" loading="lazy" alt="Bild aus Sokovox">
+          <div class="game-text">
+            <h3>Sokovox</h3>
+            <p class="genre">Denkspiel</p>
+            <p>Sokoban in Voxeln, mit den 155 Microban-Rätseln von David&nbsp;W.&nbsp;Skinner.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="make" class="section">
+    <div class="wrap">
+      <h2>Selbst machen</h2>
+      <div class="split">
+        <p class="lead">Ein Spiel ist ein Ordner: <code>conf.lua</code> richtet es ein, <code>main.lua</code> enthält seine Regeln, daneben liegen die <code>.vox</code>-Modelle. Fertige Regeln bewegen die Dinge eines Shooters oder eines Jump &amp; Runs; was eine Berührung, ein Treffer oder ein Sturz bedeutet, bestimmt dein Code.</p>
+        <figure class="code">
+          <div class="file">conf.lua</div>
+<pre><code><span class="k">function</span> conf(c)
+  c.kit <span class="o">=</span> <span class="s">"platformer"</span>
+  c.things.gem <span class="o">=</span> {
+    behaviour <span class="o">=</span> <span class="s">"pickup"</span>, model <span class="o">=</span> <span class="s">"gem.vox"</span>,
+    family <span class="o">=</span> <span class="s">"pickups"</span>, spin <span class="o">=</span> <span class="n">120</span>,
+    props <span class="o">=</span> { worth <span class="o">=</span> <span class="n">100</span> },
+  }
+<span class="k">end</span></code></pre>
+          <div class="file">main.lua</div>
+<pre><code><span class="k">function</span> on_touch(a, b, where)
+  <span class="k">if</span> a <span class="o">~=</span> player <span class="k">then return end</span>
+  <span class="k">if</span> b.families.enemies <span class="k">and</span> where <span class="o">==</span> <span class="s">"top"</span> <span class="k">then</span>
+    b:hurt(<span class="n">1</span>, player)
+    player:bounce(<span class="n">50</span>)
+  <span class="k">elseif</span> b.families.pickups <span class="k">then</span>
+    player.state.score <span class="o">=</span> player.state.score <span class="o">+</span> b.props.worth
+    b:remove()
+  <span class="k">end</span>
+<span class="k">end</span></code></pre>
+          <figcaption>Aus Voxkeep: ein Edelstein für 100 Punkte und ein Sprung auf einen Gegner.</figcaption>
+        </figure>
+      </div>
+
+      <figure class="shot">
+        <img src="/assets/img/ide.webp" width="1600" height="560" loading="lazy" alt="Die Voxcade-IDE: links die Dateien des Spiels, in der Mitte läuft Voxkeep.">
+      </figure>
+      <div class="trio">
+        <div>
+          <h3>Die IDE</h3>
+          <p>Ein Fenster für das ganze Spiel: der Code, mit den Namen der API beim Tippen angeboten; das Spiel läuft gleich daneben, seine Fehler zeigen auf die Zeile; Szenarien starten einen Lauf an jeder Stelle; und BUILD packt das Spiel zum Weitergeben.</p>
+        </div>
+        <div>
+          <h3>Editoren für Voxel und Level</h3>
+          <p>Modelle formst du Voxel für Voxel oder mit Quadern und Kugeln, Fasen und Spiegel; Level baust du aus Blöcken von Voxeln. Mit Absicht ruhig: wenige Werkzeuge, große Wörter, das Licht des Spiels.</p>
+        </div>
+        <div>
+          <h3>Ein Agent hilft, wenn du willst</h3>
+          <p>In der Konsole der IDE kann Claude Code laufen und sieht das Spiel, an dem du arbeitest: Es schaut sich ein Bild an, liest den Zustand des Spiels und probiert eine Zeile Lua im laufenden Spiel aus.</p>
+        </div>
+      </div>
+      <figure class="shot shot-narrow">
+        <img src="/assets/img/editor.webp" width="1280" height="720" loading="lazy" alt="Der Voxel-Editor mit dem Helden aus Voxkeep.">
+      </figure>
+    </div>
+  </section>
+
+  <section id="together" class="section">
+    <div class="wrap split split-media">
+      <figure class="shot">
+        <img src="/assets/img/pulsar-two.webp" width="1280" height="720" loading="lazy" alt="Pulsar mit zwei Schiffen, eins in Blau, eins in Gold.">
+      </figure>
+      <div>
+        <h2>Zusammen spielen</h2>
+        <p class="lead">Bis zu vier Spieler an einem Bildschirm, wie am Automaten: Gamepads und eine geteilte Tastatur, eine Kamera hält die Gruppe zusammen. Im Heimnetz spielt jeder Rechner dasselbe Spiel im Gleichschritt, und Freunde können später dazukommen.</p>
+        <ul class="points">
+          <li>Miteinander, gegeneinander oder in Teams: Das entscheidet jedes Spiel.</li>
+          <li>Ein zweiter Spieler steigt mit START am Gamepad ein oder mit Return an der Tastatur.</li>
+          <li>Jeder Lauf wird aufgenommen, auch Netzwerkspiele.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="inside" class="section">
+    <div class="wrap">
+      <h2>Unter der Haube</h2>
+      <div class="facts">
+        <div><h3>Jeder Lauf ein Replay</h3><p>Die Simulation ist deterministisch: Dieselben Tasten ergeben dasselbe Spiel auf Linux, Windows und macOS. Replays sind zugleich Tests, und ein Spiel lässt sich ohne Fenster prüfen.</p></div>
+        <div><h3>Überall einsteigen</h3><p>Szenarien beginnen einen Lauf mitten im Spiel, und eine Konsole (die Taste links neben der 1) führt Lua aus, während es läuft.</p></div>
+        <div><h3>Speichern und sehen</h3><p>Code, Modelle, Level und Lieder laden neu, während das Spiel läuft.</p></div>
+        <div><h3>Alles geht kaputt</h3><p>Die Welt besteht aus Voxeln: Schieß ein Loch hinein, und was abgetrennt ist, fällt.</p></div>
+        <div><h3>Musik als Text</h3><p>Lieder werden in MML für SID-artige Stimmen geschrieben oder aus Akkordfolgen komponiert, und ein Spiel kann sich nach ihrem Takt richten.</p></div>
+        <div><h3>Beleuchtet wie Pixel-Art</h3><p>Voxelgenaue Schatten, Leuchten, Glas und Metall. Licht und Schatten kommen von der Engine, nie in die Modelle gemalt.</p></div>
+        <div><h3>Nativ und leicht</h3><p>Rust, wgpu und SDL3 auf Vulkan, DirectX 12 oder Metal, mit Qualitätsstufen für ältere Rechner.</p></div>
+        <div><h3>Lua oder Rust</h3><p>Spiele sind Lua in einer sicheren, deterministischen Sandbox, im Geist von LÖVE; ein Spiel kann auch in Rust direkt auf der Engine entstehen.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="next" class="section">
+    <div class="wrap">
+      <div class="next">
+        <h2>Was als Nächstes kommt</h2>
+        <p>Voxcade ist noch nicht erschienen. Als Nächstes kommt das gemeinsame Spielemachen: GAME JAM, bis zu vier Leute in einer IDE, die in denselben Dateien tippen, Ideen einbringen und darüber abstimmen, während ein Agent baut, worauf sich die Gruppe geeinigt hat.</p>
+        <p>Neuigkeiten folgen hier und auf <a href="https://sacrvm.dev/blog/">sacrvm.dev</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p>Voxcade wird von <a href="https://sacrvm.dev/">SACRVM</a> gemacht. Keine Cookies, kein Tracking.</p>
+    <p class="foot-links">
+      <a href="/de/imprint.html">Impressum &amp; Datenschutz</a>
+      <span class="langs"><a href="/" hreflang="en" lang="en" title="English">EN</a> <a href="/de/" hreflang="de" lang="de" aria-current="true" title="Deutsch">DE</a></span>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

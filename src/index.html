@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="{{meta.code}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{site.title}}</title>
+<meta name="description" content="{{site.description}}">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#050509">
+<link rel="canonical" href="{{canonical}}">
+{{alternates}}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Voxcade">
+<meta property="og:title" content="{{site.title}}">
+<meta property="og:description" content="{{site.description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:locale" content="{{meta.locale}}">
+<meta property="og:image" content="https://voxca.de/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="preload" href="/assets/fonts/voxcade-pixel.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#games">{{site.skip}}</a>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="{{home}}">VOXCADE</a>
+    <nav class="nav" aria-label="{{nav.label}}">
+      <a href="#games">{{nav.games}}</a>
+      <a href="#make">{{nav.make}}</a>
+      <a href="#together">{{nav.together}}</a>
+      <a href="#inside">{{nav.inside}}</a>
+    </nav>
+    <nav class="langs" aria-label="{{footer.language}}">{{languages}}</nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <h1 class="logo">
+        <img src="/assets/img/logo-900.webp" srcset="/assets/img/logo-900.webp 900w, /assets/img/logo-1800.webp 1800w"
+             sizes="(max-width: 960px) 92vw, 900px" width="900" height="163" alt="Voxcade">
+      </h1>
+      <p class="tagline">{{hero.tagline}}</p>
+
+      <figure class="screen">
+        <video class="attract" muted loop playsinline preload="metadata" poster="/assets/img/hero-poster.webp"
+               width="1280" height="720" aria-label="{{hero.video}}">
+          <source src="/assets/video/hero.mp4" type="video/mp4">
+        </video>
+        <figcaption>{{hero.video}}</figcaption>
+      </figure>
+
+      <div class="hero-foot">
+        <div>
+          <p class="intro">{{hero.intro}}</p>
+          <p class="status"><span class="blink" aria-hidden="true"></span>{{hero.status}}</p>
+        </div>
+        <nav class="menu" aria-label="{{hero.menu}}">
+          <a href="#games">{{hero.menu_games}}</a>
+          <a href="#make">{{hero.menu_make}}</a>
+          <a href="#together">{{hero.menu_together}}</a>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <section id="games" class="section">
+    <div class="wrap">
+      <h2>{{games.title}}</h2>
+      <p class="lead">{{games.lead}}</p>
+      <div class="games">
+        <article class="game game-wide" style="--c: var(--moreblood)">
+          <img src="/assets/img/moreblood.webp" width="1280" height="720" loading="lazy" alt="{{games.shot}} More Blood">
+          <div class="game-text">
+            <h3>More Blood</h3>
+            <p class="genre">{{games.moreblood_genre}}</p>
+            <p>{{games.moreblood_text}}</p>
+          </div>
+        </article>
+        <article class="game" style="--c: var(--voxkeep)">
+          <img src="/assets/img/voxkeep.webp" width="1280" height="720" loading="lazy" alt="{{games.shot}} Voxkeep">
+          <div class="game-text">
+            <h3>Voxkeep</h3>
+            <p class="genre">{{games.voxkeep_genre}}</p>
+            <p>{{games.voxkeep_text}}</p>
+          </div>
+        </article>
+        <article class="game" style="--c: var(--pulsar)">
+          <img src="/assets/img/pulsar.webp" width="1280" height="720" loading="lazy" alt="{{games.shot}} Pulsar">
+          <div class="game-text">
+            <h3>Pulsar</h3>
+            <p class="genre">{{games.pulsar_genre}}</p>
+            <p>{{games.pulsar_text}}</p>
+          </div>
+        </article>
+        <article class="game" style="--c: var(--bunnyfarm)">
+          <img src="/assets/img/bunnyfarm.webp" width="1280" height="720" loading="lazy" alt="{{games.shot}} BunnyFarm">
+          <div class="game-text">
+            <h3>BunnyFarm</h3>
+            <p class="genre">{{games.bunnyfarm_genre}}</p>
+            <p>{{games.bunnyfarm_text}}</p>
+          </div>
+        </article>
+        <article class="game" style="--c: var(--sokovox)">
+          <img src="/assets/img/sokovox.webp" width="1280" height="720" loading="lazy" alt="{{games.shot}} Sokovox">
+          <div class="game-text">
+            <h3>Sokovox</h3>
+            <p class="genre">{{games.sokovox_genre}}</p>
+            <p>{{games.sokovox_text}}</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="make" class="section">
+    <div class="wrap">
+      <h2>{{make.title}}</h2>
+      <div class="split">
+        <p class="lead">{{make.lead}}</p>
+        <figure class="code">
+          <div class="file">conf.lua</div>
+<pre><code><span class="k">function</span> conf(c)
+  c.kit <span class="o">=</span> <span class="s">"platformer"</span>
+  c.things.gem <span class="o">=</span> {
+    behaviour <span class="o">=</span> <span class="s">"pickup"</span>, model <span class="o">=</span> <span class="s">"gem.vox"</span>,
+    family <span class="o">=</span> <span class="s">"pickups"</span>, spin <span class="o">=</span> <span class="n">120</span>,
+    props <span class="o">=</span> { worth <span class="o">=</span> <span class="n">100</span> },
+  }
+<span class="k">end</span></code></pre>
+          <div class="file">main.lua</div>
+<pre><code><span class="k">function</span> on_touch(a, b, where)
+  <span class="k">if</span> a <span class="o">~=</span> player <span class="k">then return end</span>
+  <span class="k">if</span> b.families.enemies <span class="k">and</span> where <span class="o">==</span> <span class="s">"top"</span> <span class="k">then</span>
+    b:hurt(<span class="n">1</span>, player)
+    player:bounce(<span class="n">50</span>)
+  <span class="k">elseif</span> b.families.pickups <span class="k">then</span>
+    player.state.score <span class="o">=</span> player.state.score <span class="o">+</span> b.props.worth
+    b:remove()
+  <span class="k">end</span>
+<span class="k">end</span></code></pre>
+          <figcaption>{{make.code}}</figcaption>
+        </figure>
+      </div>
+
+      <figure class="shot">
+        <img src="/assets/img/ide.webp" width="1600" height="560" loading="lazy" alt="{{make.ide_alt}}">
+      </figure>
+      <div class="trio">
+        <div>
+          <h3>{{make.ide_title}}</h3>
+          <p>{{make.ide_text}}</p>
+        </div>
+        <div>
+          <h3>{{make.editor_title}}</h3>
+          <p>{{make.editor_text}}</p>
+        </div>
+        <div>
+          <h3>{{make.agent_title}}</h3>
+          <p>{{make.agent_text}}</p>
+        </div>
+      </div>
+      <figure class="shot shot-narrow">
+        <img src="/assets/img/editor.webp" width="1280" height="720" loading="lazy" alt="{{make.editor_alt}}">
+      </figure>
+    </div>
+  </section>
+
+  <section id="together" class="section">
+    <div class="wrap split split-media">
+      <figure class="shot">
+        <img src="/assets/img/pulsar-two.webp" width="1280" height="720" loading="lazy" alt="{{together.alt}}">
+      </figure>
+      <div>
+        <h2>{{together.title}}</h2>
+        <p class="lead">{{together.lead}}</p>
+        <ul class="points">
+          <li>{{together.point_forms}}</li>
+          <li>{{together.point_seats}}</li>
+          <li>{{together.point_record}}</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="inside" class="section">
+    <div class="wrap">
+      <h2>{{inside.title}}</h2>
+      <div class="facts">
+        <div><h3>{{inside.replays_title}}</h3><p>{{inside.replays_text}}</p></div>
+        <div><h3>{{inside.late_title}}</h3><p>{{inside.late_text}}</p></div>
+        <div><h3>{{inside.reload_title}}</h3><p>{{inside.reload_text}}</p></div>
+        <div><h3>{{inside.break_title}}</h3><p>{{inside.break_text}}</p></div>
+        <div><h3>{{inside.music_title}}</h3><p>{{inside.music_text}}</p></div>
+        <div><h3>{{inside.light_title}}</h3><p>{{inside.light_text}}</p></div>
+        <div><h3>{{inside.native_title}}</h3><p>{{inside.native_text}}</p></div>
+        <div><h3>{{inside.lua_title}}</h3><p>{{inside.lua_text}}</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="next" class="section">
+    <div class="wrap">
+      <div class="next">
+        <h2>{{next.title}}</h2>
+        <p>{{next.text}}</p>
+        <p>{{next.follow}}</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+{{footer}}
+</body>
+</html>

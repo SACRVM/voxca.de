@@ -1,0 +1,128 @@
+# The site in English, the default: its pages at the root.
+# Every language has every key; tools/bake.py names any missing.
+# Strings may hold inline HTML (<code>, <a>, <em>).
+
+[meta]
+code = "en"
+name = "English"
+dir = ""              # where its pages go, below the root
+locale = "en_US"
+
+[site]
+title = "Voxcade · a voxel arcade engine"
+description = "Voxcade is a game engine for small arcade games made of voxels you can blow apart: every classic 2D genre lifted into 3D, written in Lua, played alone or together."
+skip = "Skip to the content"
+
+[nav]
+games = "Games"
+make = "Make"
+together = "Together"
+inside = "Inside"
+label = "Sections"
+
+[hero]
+tagline = "Every classic 2D genre, in voxels."
+intro = "Voxcade is a game engine for small, fast arcade games made of 3D pixels you can blow apart. Write them in Lua, shape them in its editors, and play them alone, side by side at one screen, or over the home network."
+status = "In development · not released yet"
+video = "Scenes from the five games that come with Voxcade, drawn by the engine from their recorded runs."
+menu = "Where to"
+menu_games = "The games"
+menu_make = "Make a game"
+menu_together = "Play together"
+
+[games]
+title = "Games"
+lead = "Five games come with the engine, each a folder of Lua and voxels, each a different genre."
+moreblood_genre = "Run-and-gun shooter"
+moreblood_text = "Fight through the desert, free the hostages and bring down the gunship. Huts, watchtowers and the ground itself burst into voxels."
+voxkeep_genre = "Jump & run"
+voxkeep_text = "A castle at night: six rooms of bats to time, ferries over spikes, levers, lifts and a crate that holds a hatch open."
+pulsar_genre = "Space shooter"
+pulsar_text = "The enemy waves arrive on the bars of the music. Fly alone or with a friend: two ships, each with its own shield, bombs and score."
+bunnyfarm_genre = "Farming game"
+bunnyfarm_text = "Sow, harvest, cook and fill orders, keep hens, and mend the fence before the wolf comes at night. In English, German and French."
+sokovox_genre = "Puzzle"
+sokovox_text = "Sokoban in voxels, with the 155 Microban puzzles by David&nbsp;W.&nbsp;Skinner."
+shot = "Screenshot of"
+
+[make]
+title = "Make your own"
+lead = "A game is a folder: <code>conf.lua</code> sets it up, <code>main.lua</code> holds its rules, and <code>.vox</code> models sit beside them. Ready-made rules move the things of a shooter or a jump &amp; run; what a touch, a hit or a fall means is your code."
+code = "From Voxkeep: a gem worth 100 points, and a jump onto an enemy."
+ide_title = "The IDE"
+ide_text = "One window for the whole game: the code, with the API's names offered as you type; the game playing in place, its errors pointing at the line; scenarios that start a run anywhere; and BUILD, which packs the game up to share."
+ide_alt = "The Voxcade IDE: the game's files on the left, Voxkeep playing in the main area."
+editor_title = "Editors for voxels and levels"
+editor_text = "Shape models voxel by voxel, or with boxes and spheres, bevels and a mirror; build levels from blocks of voxels. Calm on purpose: few tools, big words, the game's own light."
+editor_alt = "The voxel editor with the hero of Voxkeep."
+agent_title = "An agent along, if you like"
+agent_text = "The IDE's console can run Claude Code, which sees the game you are making: it looks at a frame, reads the game's state and tries a line of Lua in the running game."
+
+[together]
+title = "Play together"
+lead = "Up to four players at one screen, as at an arcade machine: pads and a shared keyboard, one camera holding the group together. Over the home network every machine plays the same game in step, and a friend can join late."
+point_forms = "Co-op, versus or teams: each game decides."
+point_seats = "A second player joins with START on a pad, or Return at the keyboard."
+point_record = "Every run is recorded, network games too."
+alt = "Pulsar with two ships, one in blue, one in gold."
+
+[inside]
+title = "Under the hood"
+replays_title = "Every run a replay"
+replays_text = "The simulation is deterministic: the same keys give the same game on Linux, Windows and macOS. Replays double as tests, and a game can be checked without a window."
+late_title = "Start anywhere"
+late_text = "Scenarios begin a run late in a game, and a console (the key left of 1) runs Lua while it plays."
+reload_title = "Save and see"
+reload_text = "Code, models, levels and songs reload while the game runs."
+break_title = "Everything breaks"
+break_text = "The world is voxels: blow a hole in it, and the pieces cut loose fall."
+music_title = "Music as text"
+music_text = "Songs are written in MML for SID-like voices, or composed from chord progressions, and a game can move on their beat."
+light_title = "Lit like pixel art"
+light_text = "Voxel-exact shadows, glow, glass and metal. Light and shade come from the engine, never painted into the models."
+native_title = "Native and light"
+native_text = "Rust, wgpu and SDL3 on Vulkan, DirectX 12 or Metal, with quality levels for older machines."
+lua_title = "Lua or Rust"
+lua_text = "Games are Lua in a safe, deterministic sandbox, in the spirit of LÖVE; a game can also be written in Rust on the engine alone."
+
+[next]
+title = "What's next"
+text = "Voxcade is not released yet. Next comes making games together: GAME JAM, up to four people in one IDE, typing in the same files, putting ideas up and voting on them, while an agent builds what the group agreed on."
+follow = "News follows here and on <a href=\"https://sacrvm.dev/blog/\">sacrvm.dev</a>."
+
+[footer]
+made = "Voxcade is made by <a href=\"https://sacrvm.dev/\">SACRVM</a>."
+cookies = "No cookies, no tracking."
+legal = "Imprint &amp; privacy"
+language = "Language"
+top = "Back to the top"
+
+[legal]
+title = "Imprint & privacy · Voxcade"
+heading = "Imprint &amp; privacy"
+lead = "The legal part: German law, English words."
+imprint = "Imprint"
+basis = "Information according to § 5 DDG (German Digital Services Act)"
+contact = "Contact"
+email = "E-mail"
+responsible = "Responsible for content according to § 18 (2) MStV"
+country = "Germany"
+same_address = "Marcus Wilhelm, address as above."
+liability = "Liability"
+content_title = "Content"
+content_text = "The contents of this site were made with the greatest possible care. I nevertheless make no guarantee that they are correct, complete or current. As a service provider I am responsible for my own content under general law; I am not obliged to monitor third-party information that is transmitted or stored."
+links_title = "Links"
+links_text = "This site links to external websites, GitHub for instance, whose content I have no influence over. The respective provider is always responsible for that content. No legal violations were apparent at the time of linking; should one become known, I will remove the link promptly."
+copyright_title = "Copyright"
+copyright_text = "Content and works made by the site operator are subject to German copyright law. The Microban puzzles in Sokovox are by David W. Skinner, passed on with his credit as he asks."
+privacy = "Cookies &amp; tracking"
+privacy_short = "Short version: none of it."
+privacy_text = "This site sets no cookies, so there is no cookie banner: where nothing is collected, there is nothing to consent to. No analytics, no trackers, no forms, and nothing loaded from other servers: the fonts, pictures and films all live on this host."
+hosting_text = "What remains are the technical server logs of the hosting provider (GitHub Pages, GitHub Inc.), which include the requesting IP address; details are in the <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">GitHub Privacy Statement</a>."
+back = "Back to Voxcade"
+
+[notfound]
+title = "Not found · Voxcade"
+heading = "Game over"
+text = "There is no page here."
+home = "Back to the start"

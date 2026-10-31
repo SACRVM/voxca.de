@@ -1,0 +1,127 @@
+# Die Seite auf Deutsch, unter /de/.
+# Jede Sprache hat jeden Schlüssel; tools/bake.py nennt fehlende.
+
+[meta]
+code = "de"
+name = "Deutsch"
+dir = "de/"
+locale = "de_DE"
+
+[site]
+title = "Voxcade · eine Voxel-Arcade-Engine"
+description = "Voxcade ist eine Spiele-Engine für kleine Arcade-Spiele aus Voxeln, die man zerlegen kann: jedes klassische 2D-Genre in 3D, geschrieben in Lua, allein oder zusammen gespielt."
+skip = "Zum Inhalt springen"
+
+[nav]
+games = "Spiele"
+make = "Selbst machen"
+together = "Zusammen"
+inside = "Technik"
+label = "Abschnitte"
+
+[hero]
+tagline = "Jedes klassische 2D-Genre, in Voxeln."
+intro = "Voxcade ist eine Spiele-Engine für kleine, schnelle Arcade-Spiele aus 3D-Pixeln, die man in Stücke schießen kann. Du schreibst sie in Lua, formst sie in den eigenen Editoren und spielst sie allein, zu mehreren an einem Bildschirm oder im Heimnetz."
+status = "In Entwicklung · noch nicht erschienen"
+video = "Szenen aus den fünf Spielen, die Voxcade mitbringt, gezeichnet von der Engine aus aufgenommenen Läufen."
+menu = "Wohin"
+menu_games = "Die Spiele"
+menu_make = "Ein Spiel machen"
+menu_together = "Zusammen spielen"
+
+[games]
+title = "Spiele"
+lead = "Fünf Spiele kommen mit der Engine, jedes ein Ordner aus Lua und Voxeln, jedes ein anderes Genre."
+moreblood_genre = "Run-and-Gun-Shooter"
+moreblood_text = "Kämpf dich durch die Wüste, befrei die Geiseln und hol den Kampfhubschrauber vom Himmel. Hütten, Wachtürme und der Boden selbst zerfallen in Voxel."
+voxkeep_genre = "Jump &amp; Run"
+voxkeep_text = "Eine Burg bei Nacht: sechs Räume mit Fledermäusen, die man abpassen muss, Fähren über Stacheln, Hebel, Aufzüge und eine Kiste, die eine Falltür offen hält."
+pulsar_genre = "Weltraum-Shooter"
+pulsar_text = "Die Gegnerwellen kommen im Takt der Musik. Flieg allein oder zu zweit: zwei Schiffe, jedes mit eigenem Schild, eigenen Bomben und eigenem Punktestand."
+bunnyfarm_genre = "Farmspiel"
+bunnyfarm_text = "Säen, ernten, kochen und Aufträge erfüllen, Hühner halten und den Zaun flicken, bevor nachts der Wolf kommt. Auf Deutsch, Englisch und Französisch."
+sokovox_genre = "Denkspiel"
+sokovox_text = "Sokoban in Voxeln, mit den 155 Microban-Rätseln von David&nbsp;W.&nbsp;Skinner."
+shot = "Bild aus"
+
+[make]
+title = "Selbst machen"
+lead = "Ein Spiel ist ein Ordner: <code>conf.lua</code> richtet es ein, <code>main.lua</code> enthält seine Regeln, daneben liegen die <code>.vox</code>-Modelle. Fertige Regeln bewegen die Dinge eines Shooters oder eines Jump &amp; Runs; was eine Berührung, ein Treffer oder ein Sturz bedeutet, bestimmt dein Code."
+code = "Aus Voxkeep: ein Edelstein für 100 Punkte und ein Sprung auf einen Gegner."
+ide_title = "Die IDE"
+ide_text = "Ein Fenster für das ganze Spiel: der Code, mit den Namen der API beim Tippen angeboten; das Spiel läuft gleich daneben, seine Fehler zeigen auf die Zeile; Szenarien starten einen Lauf an jeder Stelle; und BUILD packt das Spiel zum Weitergeben."
+ide_alt = "Die Voxcade-IDE: links die Dateien des Spiels, in der Mitte läuft Voxkeep."
+editor_title = "Editoren für Voxel und Level"
+editor_text = "Modelle formst du Voxel für Voxel oder mit Quadern und Kugeln, Fasen und Spiegel; Level baust du aus Blöcken von Voxeln. Mit Absicht ruhig: wenige Werkzeuge, große Wörter, das Licht des Spiels."
+editor_alt = "Der Voxel-Editor mit dem Helden aus Voxkeep."
+agent_title = "Ein Agent hilft, wenn du willst"
+agent_text = "In der Konsole der IDE kann Claude Code laufen und sieht das Spiel, an dem du arbeitest: Es schaut sich ein Bild an, liest den Zustand des Spiels und probiert eine Zeile Lua im laufenden Spiel aus."
+
+[together]
+title = "Zusammen spielen"
+lead = "Bis zu vier Spieler an einem Bildschirm, wie am Automaten: Gamepads und eine geteilte Tastatur, eine Kamera hält die Gruppe zusammen. Im Heimnetz spielt jeder Rechner dasselbe Spiel im Gleichschritt, und Freunde können später dazukommen."
+point_forms = "Miteinander, gegeneinander oder in Teams: Das entscheidet jedes Spiel."
+point_seats = "Ein zweiter Spieler steigt mit START am Gamepad ein oder mit Return an der Tastatur."
+point_record = "Jeder Lauf wird aufgenommen, auch Netzwerkspiele."
+alt = "Pulsar mit zwei Schiffen, eins in Blau, eins in Gold."
+
+[inside]
+title = "Unter der Haube"
+replays_title = "Jeder Lauf ein Replay"
+replays_text = "Die Simulation ist deterministisch: Dieselben Tasten ergeben dasselbe Spiel auf Linux, Windows und macOS. Replays sind zugleich Tests, und ein Spiel lässt sich ohne Fenster prüfen."
+late_title = "Überall einsteigen"
+late_text = "Szenarien beginnen einen Lauf mitten im Spiel, und eine Konsole (die Taste links neben der 1) führt Lua aus, während es läuft."
+reload_title = "Speichern und sehen"
+reload_text = "Code, Modelle, Level und Lieder laden neu, während das Spiel läuft."
+break_title = "Alles geht kaputt"
+break_text = "Die Welt besteht aus Voxeln: Schieß ein Loch hinein, und was abgetrennt ist, fällt."
+music_title = "Musik als Text"
+music_text = "Lieder werden in MML für SID-artige Stimmen geschrieben oder aus Akkordfolgen komponiert, und ein Spiel kann sich nach ihrem Takt richten."
+light_title = "Beleuchtet wie Pixel-Art"
+light_text = "Voxelgenaue Schatten, Leuchten, Glas und Metall. Licht und Schatten kommen von der Engine, nie in die Modelle gemalt."
+native_title = "Nativ und leicht"
+native_text = "Rust, wgpu und SDL3 auf Vulkan, DirectX 12 oder Metal, mit Qualitätsstufen für ältere Rechner."
+lua_title = "Lua oder Rust"
+lua_text = "Spiele sind Lua in einer sicheren, deterministischen Sandbox, im Geist von LÖVE; ein Spiel kann auch in Rust direkt auf der Engine entstehen."
+
+[next]
+title = "Was als Nächstes kommt"
+text = "Voxcade ist noch nicht erschienen. Als Nächstes kommt das gemeinsame Spielemachen: GAME JAM, bis zu vier Leute in einer IDE, die in denselben Dateien tippen, Ideen einbringen und darüber abstimmen, während ein Agent baut, worauf sich die Gruppe geeinigt hat."
+follow = "Neuigkeiten folgen hier und auf <a href=\"https://sacrvm.dev/blog/\">sacrvm.dev</a>."
+
+[footer]
+made = "Voxcade wird von <a href=\"https://sacrvm.dev/\">SACRVM</a> gemacht."
+cookies = "Keine Cookies, kein Tracking."
+legal = "Impressum &amp; Datenschutz"
+language = "Sprache"
+top = "Nach oben"
+
+[legal]
+title = "Impressum & Datenschutz · Voxcade"
+heading = "Impressum &amp; Datenschutz"
+lead = "Der rechtliche Teil."
+imprint = "Impressum"
+basis = "Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)"
+contact = "Kontakt"
+email = "E-Mail"
+responsible = "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV"
+country = "Deutschland"
+same_address = "Marcus Wilhelm, Anschrift wie oben."
+liability = "Haftung"
+content_title = "Inhalte"
+content_text = "Die Inhalte dieser Seite wurden mit größtmöglicher Sorgfalt erstellt. Für ihre Richtigkeit, Vollständigkeit und Aktualität übernehme ich dennoch keine Gewähr. Als Diensteanbieter bin ich für eigene Inhalte nach den allgemeinen Gesetzen verantwortlich; übermittelte oder gespeicherte fremde Informationen muss ich nicht überwachen."
+links_title = "Links"
+links_text = "Diese Seite verweist auf externe Websites, zum Beispiel GitHub, auf deren Inhalte ich keinen Einfluss habe. Für diese Inhalte ist stets der jeweilige Anbieter verantwortlich. Zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar; wird mir einer bekannt, entferne ich den Link umgehend."
+copyright_title = "Urheberrecht"
+copyright_text = "Die vom Seitenbetreiber erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Die Microban-Rätsel in Sokovox stammen von David W. Skinner und werden, wie er es wünscht, mit seiner Nennung weitergegeben."
+privacy = "Cookies &amp; Tracking"
+privacy_short = "Kurz gesagt: nichts davon."
+privacy_text = "Diese Seite setzt keine Cookies, deshalb gibt es auch kein Cookie-Banner: Wo nichts erhoben wird, muss niemand zustimmen. Keine Statistik, keine Tracker, keine Formulare und nichts, das von anderen Servern geladen wird: Schriften, Bilder und Filme liegen alle auf diesem Host."
+hosting_text = "Es bleiben die technischen Server-Logs des Hosting-Anbieters (GitHub Pages, GitHub Inc.), die die anfragende IP-Adresse enthalten; Einzelheiten stehen im <a href=\"https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement\">Datenschutzhinweis von GitHub</a>."
+back = "Zurück zu Voxcade"
+
+[notfound]
+title = "Nicht gefunden · Voxcade"
+heading = "Game over"
+text = "Hier gibt es keine Seite."
+home = "Zurück zum Anfang"

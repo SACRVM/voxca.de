@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="{{meta.code}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{legal.title}}</title>
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#050509">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="{{canonical}}">
+{{alternates}}
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="preload" href="/assets/fonts/voxcade-pixel.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="{{home}}">VOXCADE</a>
+    <nav class="langs" aria-label="{{footer.language}}">{{languages}}</nav>
+  </div>
+</header>
+
+<main class="section legal">
+  <div class="wrap">
+    <h1>{{legal.heading}}</h1>
+    <p class="lead">{{legal.lead}}</p>
+
+    <h2>{{legal.imprint}}</h2>
+    <p class="basis">{{legal.basis}}</p>
+    <address>
+      Marcus Wilhelm<br>
+      Weserstr. 6<br>
+      64347 Griesheim<br>
+      {{legal.country}}
+    </address>
+    <h3>{{legal.contact}}</h3>
+    <p>{{legal.email}}: <a href="mailto:mail@sacrvm.dev">mail@sacrvm.dev</a></p>
+    <h3>{{legal.responsible}}</h3>
+    <p>{{legal.same_address}}</p>
+
+    <h2>{{legal.liability}}</h2>
+    <h3>{{legal.content_title}}</h3>
+    <p>{{legal.content_text}}</p>
+    <h3>{{legal.links_title}}</h3>
+    <p>{{legal.links_text}}</p>
+    <h3>{{legal.copyright_title}}</h3>
+    <p>{{legal.copyright_text}}</p>
+
+    <h2>{{legal.privacy}}</h2>
+    <p class="basis">{{legal.privacy_short}}</p>
+    <p>{{legal.privacy_text}}</p>
+    <p>{{legal.hosting_text}}</p>
+
+    <p class="back"><a href="{{home}}">{{legal.back}}</a></p>
+  </div>
+</main>
+
+{{footer}}
+</body>
+</html>

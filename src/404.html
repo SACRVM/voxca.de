@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{meta.code}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{notfound.title}}</title>
+<meta name="color-scheme" content="dark">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<main class="section gameover">
+  <div class="wrap">
+    <p class="brand">VOXCADE</p>
+    <h1>{{notfound.heading}}</h1>
+    {{each_language: <p lang="{{meta.code}}">{{notfound.text}} <a href="/{{meta.dir}}">{{notfound.home}}</a></p>}}
+  </div>
+</main>
+</body>
+</html>

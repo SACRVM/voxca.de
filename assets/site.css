@@ -114,9 +114,14 @@ h3 { font-size: 20px; line-height: 1.4; color: var(--cream); text-transform: upp
 .game-text { padding: 20px 22px 8px; }
 .game h3 { font-size: 30px; color: var(--c); margin-bottom: 4px; text-transform: none; }
 .genre { font-size: 20px; color: var(--muted); text-transform: uppercase; margin-bottom: 12px; }
-.game-wide { grid-column: 1 / -1; display: grid; grid-template-columns: 2fr 1fr; }
-.game-wide img { border-bottom: 0; border-right: 1px solid var(--line); height: 100%; }
-.game-wide .game-text { padding: 28px; align-self: center; }
+.game-wide { grid-column: 1 / -1; }
+/* Picture and text side by side only where there is room; narrower, the
+   wide card is laid out exactly as the others (a phone lost its text). */
+@media (min-width: 901px) {
+  .game-wide { display: grid; grid-template-columns: 2fr 1fr; }
+  .game-wide img { border-bottom: 0; border-right: 1px solid var(--line); height: 100%; }
+  .game-wide .game-text { padding: 28px; align-self: center; }
+}
 
 .split { display: grid; grid-template-columns: 1fr 1.6fr; gap: 48px; align-items: start; }
 .split-media { grid-template-columns: 1.1fr 1fr; align-items: center; }
@@ -181,8 +186,6 @@ pre .o { color: var(--muted); }
   .bar .nav { display: none; }
   .bar .nav + .langs { margin-left: auto; padding-left: 0; border-left: 0; }
   .games, .split-media, .trio { grid-template-columns: 1fr; }
-  .game-wide { grid-template-columns: 1fr; }
-  .game-wide img { border-right: 0; border-bottom: 1px solid var(--line); }
   .facts { grid-template-columns: 1fr 1fr; }
   .hero-foot { grid-template-columns: 1fr; gap: 28px; }
 }

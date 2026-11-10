@@ -60,6 +60,7 @@ shot = "Bild aus"
 
 [download]
 where = "Für PCs mit Windows oder Linux, nicht für Handys oder Tablets; macOS kommt später."
+free = "Voxcade ist frei, unter der <a href=\"/license.txt\">zlib-Lizenz</a> (englisch), wie LÖVE: Nutz es, mach Spiele damit, verschenk oder verkauf sie. Ein Spiel, das du machst, gehört dir."
 title = "Download"
 lead = "Version {{release.version}} vom {{release.date}}: fünf Spiele und die IDE, die Werkstatt für eigene Spiele, in einem Ordner. Nichts zu installieren: entpacken und Voxcade per Doppelklick starten."
 windows_needs = "Ein PC mit Windows 10 oder 11 (64 Bit). Seine Grafik muss DirectX 12 oder Vulkan können, wie die meisten seit etwa 2015."
@@ -143,7 +144,7 @@ content_text = "Die Inhalte dieser Seite wurden mit größtmöglicher Sorgfalt e
 links_title = "Links"
 links_text = "Diese Seite verweist auf externe Websites, zum Beispiel GitHub, auf deren Inhalte ich keinen Einfluss habe. Für diese Inhalte ist stets der jeweilige Anbieter verantwortlich. Zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar; wird mir einer bekannt, entferne ich den Link umgehend."
 copyright_title = "Urheberrecht"
-copyright_text = "Die vom Seitenbetreiber erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Die Microban-Rätsel in Sokovox stammen von David W. Skinner und werden, wie er es wünscht, mit seiner Nennung weitergegeben."
+copyright_text = "Die vom Seitenbetreiber erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Voxcade selbst, seine Spiele und Vorlagen sind unter der <a href=\"/license.txt\">zlib-Lizenz</a> frei nutzbar. Die Microban-Rätsel in Sokovox stammen von David W. Skinner und werden, wie er es wünscht, mit seiner Nennung weitergegeben."
 privacy = "Cookies &amp; Tracking"
 privacy_short = "Kurz gesagt: nichts davon."
 privacy_text = "Diese Seite setzt keine Cookies, deshalb gibt es auch kein Cookie-Banner: Wo nichts erhoben wird, muss niemand zustimmen. Keine Statistik, keine Tracker, keine Formulare und nichts, das von anderen Servern geladen wird: Schriften, Bilder und Filme liegen alle auf diesem Host."

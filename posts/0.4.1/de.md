@@ -21,4 +21,4 @@ Voxcade verlässt zum ersten Mal die Werkstatt. Version 0.4.1 ist ein Ordner mit
 - **macOS** ist in dieser Version nicht dabei.
 - Ein Spiel übers Internet, das keine direkte Verbindung findet, läuft über unser Relay und kann ab und zu kurz stocken.
 
-Die Lizenzen der Bibliotheken, die im Programm stecken, stehen in `THIRD-PARTY-LICENSES.txt` im Ordner.
+Voxcade ist frei, unter der [zlib-Lizenz](/license.txt), wie LÖVE: Nutz es, mach Spiele damit, verschenk oder verkauf sie. Ein Spiel, das du machst, gehört dir. Die Lizenzen der Bibliotheken, die im Programm stecken, stehen in `THIRD-PARTY-LICENSES.txt` im Ordner.

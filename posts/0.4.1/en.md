@@ -21,4 +21,4 @@ Voxcade is out of the workshop for the first time. Version 0.4.1 is one folder w
 - **macOS** is not part of this release.
 - A game across the internet that cannot connect directly goes through our relay, and may stall for a moment now and then.
 
-The licences of the libraries built into the program are in `THIRD-PARTY-LICENSES.txt` in the folder.
+Voxcade is free, under the [zlib licence](/license.txt), as LÖVE is: use it, make games with it, give them away or sell them. A game you make is yours. The licences of the libraries built into the program are in `THIRD-PARTY-LICENSES.txt` in the folder.

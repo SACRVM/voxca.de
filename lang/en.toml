@@ -61,6 +61,7 @@ shot = "Screenshot of"
 
 [download]
 where = "For PCs with Windows or Linux, not phones or tablets; macOS comes later."
+free = "Voxcade is free, under the <a href=\"/license.txt\">zlib licence</a>, as LÖVE is: use it, make games with it, give them away or sell them. A game you make is yours."
 title = "Download"
 lead = "Version {{release.version}} of {{release.date}}: five games, and the IDE, the workshop where you make your own, in one folder. Nothing to install: unpack it and start Voxcade with a double click."
 windows_needs = "A PC with Windows 10 or 11 (64-bit). Its graphics must know DirectX 12 or Vulkan, as most since about 2015 do."
@@ -144,7 +145,7 @@ content_text = "The contents of this site were made with the greatest possible c
 links_title = "Links"
 links_text = "This site links to external websites, GitHub for instance, whose content I have no influence over. The respective provider is always responsible for that content. No legal violations were apparent at the time of linking; should one become known, I will remove the link promptly."
 copyright_title = "Copyright"
-copyright_text = "Content and works made by the site operator are subject to German copyright law. The Microban puzzles in Sokovox are by David W. Skinner, passed on with his credit as he asks."
+copyright_text = "Content and works made by the site operator are subject to German copyright law. Voxcade itself, its games and templates are free to use under the <a href=\"/license.txt\">zlib licence</a>. The Microban puzzles in Sokovox are by David W. Skinner, passed on with his credit as he asks."
 privacy = "Cookies &amp; tracking"
 privacy_short = "Short version: none of it."
 privacy_text = "This site sets no cookies, so there is no cookie banner: where nothing is collected, there is nothing to consent to. No analytics, no trackers, no forms, and nothing loaded from other servers: the fonts, pictures and films all live on this host."

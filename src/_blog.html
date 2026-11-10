@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="{{meta.code}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{blog.title}}</title>
+<meta name="description" content="{{blog.description}}">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#050509">
+<link rel="canonical" href="{{canonical}}">
+{{alternates}}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Voxcade">
+<meta property="og:title" content="{{blog.title}}">
+<meta property="og:description" content="{{blog.description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:locale" content="{{meta.locale}}">
+<meta property="og:image" content="https://voxca.de/assets/img/og.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="preload" href="/assets/fonts/voxcade-pixel.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="alternate" type="application/atom+xml" href="{{home}}blog/feed.xml" title="{{blog.feed_title}}">
+</head>
+<body>
+{{header}}
+
+<main id="content" class="section page">
+  <div class="wrap">
+    <h1>{{blog.heading}}</h1>
+    <p class="lead">{{blog.lead}}</p>
+    <div class="posts">
+{{blog.list}}
+    </div>
+  </div>
+</main>
+
+{{footer}}
+</body>
+</html>

@@ -8,4 +8,36 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://voxca.de/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://voxca.de/de/"/>
   </url>
+  <url><loc>https://voxca.de/install.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voxca.de/install.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://voxca.de/de/install.html"/>
+  </url>
+  <url><loc>https://voxca.de/de/install.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voxca.de/install.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://voxca.de/de/install.html"/>
+  </url>
+  <url><loc>https://voxca.de/quickstart.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voxca.de/quickstart.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://voxca.de/de/quickstart.html"/>
+  </url>
+  <url><loc>https://voxca.de/de/quickstart.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voxca.de/quickstart.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://voxca.de/de/quickstart.html"/>
+  </url>
+  <url><loc>https://voxca.de/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voxca.de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://voxca.de/de/blog/"/>
+  </url>
+  <url><loc>https://voxca.de/de/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voxca.de/blog/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://voxca.de/de/blog/"/>
+  </url>
+  <url><loc>https://voxca.de/blog/0.4.1.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voxca.de/blog/0.4.1.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://voxca.de/de/blog/0.4.1.html"/>
+  </url>
+  <url><loc>https://voxca.de/de/blog/0.4.1.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voxca.de/blog/0.4.1.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://voxca.de/de/blog/0.4.1.html"/>
+  </url>
 </urlset>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to install · Voxcade</title>
+<meta name="description" content="Voxcade on Windows and Linux, step by step: download, unpack, double-click.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#050509">
+<link rel="canonical" href="https://voxca.de/install.html">
+<link rel="alternate" hreflang="en" href="https://voxca.de/install.html">
+<link rel="alternate" hreflang="de" href="https://voxca.de/de/install.html">
+<link rel="alternate" hreflang="x-default" href="https://voxca.de/install.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Voxcade">
+<meta property="og:title" content="How to install · Voxcade">
+<meta property="og:description" content="Voxcade on Windows and Linux, step by step: download, unpack, double-click.">
+<meta property="og:url" content="https://voxca.de/install.html">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://voxca.de/assets/img/og.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="preload" href="/assets/fonts/voxcade-pixel.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="alternate" type="application/atom+xml" href="/blog/feed.xml" title="Voxcade · Blog">
+</head>
+<body>
+<a class="skip" href="#content">Skip to the content</a>
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="/">VOXCADE</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="/#games">Games</a>
+      <a href="/#make">Make</a>
+      <a href="/#together">Together</a>
+      <a class="keep" href="/#download">Download</a>
+      <a class="keep" href="/blog/">Blog</a>
+    </nav>
+    <nav class="langs" aria-label="Language"><a href="/install.html" hreflang="en" lang="en" aria-current="true" title="English">EN</a> <a href="/de/install.html" hreflang="de" lang="de" title="Deutsch">DE</a></nav>
+  </div>
+</header>
+
+<main id="content" class="section page">
+  <div class="wrap">
+    <h1>How to install</h1>
+    <p class="lead">No installer, no account: Voxcade is a folder. Download it, unpack it, double-click Voxcade. Five minutes, step by step.</p>
+    <nav class="systems" aria-label="Your system">
+      <a class="jump" href="#windows">Windows</a>
+      <a class="jump" href="#linux">Linux</a>
+    </nav>
+
+    <section id="windows" class="howto">
+      <h2>Windows</h2>
+      <p class="needs">A PC with Windows 10 or 11 (64-bit). Its graphics must know DirectX 12 or Vulkan, as most since about 2015 do.</p>
+      <ol class="steps">
+        <li><h3>Download</h3><p>Download the zip file. Your browser puts it in your Downloads folder.</p>
+          <p><a class="button" href="https://github.com/SACRVM/voxca.de/releases/download/v0.4.1/voxcade-0.4.1-windows-x86_64.zip">Download for Windows</a> <span class="download-file">19.8 MB</span></p>
+          <p class="note">If the browser says the file is not commonly downloaded, keep it: in Edge, the three dots beside it, <em>Keep</em>, <em>Show more</em>, <em>Keep anyway</em>.</p></li>
+        <li><h3>Unpack</h3><p>Open the Downloads folder, right-click the zip file and choose <em>Extract All</em>, then <em>Extract</em>. A new folder of the same name opens, with <code>voxcade</code> in it. Start it from there, not from inside the zip: there it cannot run.</p>
+          <p class="note">Fewer warnings later: before unpacking, right-click the zip file, choose <em>Properties</em>, tick <em>Unblock</em> at the bottom and press <em>OK</em>.</p></li>
+        <li><h3>Start Voxcade</h3><p>The first time, Windows may say it protected your PC: Voxcade is not signed yet. Click <em>More info</em>, then <em>Run anyway</em> (the big button, <em>Don&#39;t run</em>, would stop it). Windows remembers it.</p><p>Double-click <code>voxcade</code> (Windows may show it as <code>voxcade.exe</code>; its type says <em>Application</em>). The launcher opens: PLAY beside a game starts it. A black window opens behind it: it shows messages and closes with Voxcade.</p>
+          <figure class="shot shot-small"><img src="/assets/img/launcher.webp" width="800" height="530" loading="lazy" alt="The launcher: the six games, each with PLAY and EDIT, and NEW GAME below."></figure></li>
+      </ol>
+      <div class="facts facts-two then">
+        <div><h3>Then: make games</h3><p>In the launcher, EDIT opens a game in the IDE, the workshop where games are made, and NEW GAME begins one of your own. The <a href="/quickstart.html">quick start</a> shows the way.</p></div>
+        <div><h3>Then: play together</h3><p>Across the internet nothing needs opening. To host on the home network, Windows asks the first time whether Voxcade may use the network: allow it for private networks (an administrator has to agree). Cancelled by mistake? Windows Security, <em>Firewall &amp; network protection</em>, <em>Allow an app through firewall</em>.</p></div>
+      </div>
+    </section>
+
+    <section id="linux" class="howto">
+      <h2>Linux</h2>
+      <p class="needs">A PC with a current Linux (64-bit): Ubuntu 24.04, Linux Mint 22, Fedora 40, Debian 13 or newer, with Vulkan graphics drivers.</p>
+      <ol class="steps">
+        <li><h3>Download</h3><p>Download the tar.gz file.</p>
+          <p><a class="button" href="https://github.com/SACRVM/voxca.de/releases/download/v0.4.1/voxcade-0.4.1-linux-x86_64.tar.gz">Download for Linux</a> <span class="download-file">22.9 MB</span></p></li>
+        <li><h3>Unpack</h3><p>In your file manager, right-click it and choose <em>Extract Here</em>. Or in a terminal, in the folder you downloaded it to:</p>
+<pre><code>tar xzf voxcade-0.4.1-linux-x86_64.tar.gz</code></pre></li>
+        <li><h3>Start Voxcade</h3><p>Open the new folder and double-click <code>start-voxcade.sh</code>. If the file manager shows the text instead, right-click it and choose <em>Run as a Program</em>, or allow running it in its properties. The launcher opens: PLAY beside a game starts it. Or in a terminal:</p>
+<pre><code>cd voxcade-0.4.1-linux-x86_64
+./voxcade</code></pre>
+          <figure class="shot shot-small"><img src="/assets/img/launcher.webp" width="800" height="530" loading="lazy" alt="The launcher: the six games, each with PLAY and EDIT, and NEW GAME below."></figure>
+          <p class="note">If nothing appears, start it from a terminal as above: it says what is wrong. <code>GLIBC_2.39 not found</code> means the system is too old (Ubuntu 24.04, Linux Mint 22 and newer work); the first line of this shows the version:</p>
+<pre><code>ldd --version</code></pre></li>
+      </ol>
+      <div class="facts facts-two then">
+        <div><h3>Then: make games</h3><p>In the launcher, EDIT opens a game in the IDE, the workshop where games are made, and NEW GAME begins one of your own. The <a href="/quickstart.html">quick start</a> shows the way.</p></div>
+        <div><h3>Then: play together</h3><p>Across the internet nothing needs opening. To host on the home network with a firewall turned on (ufw, as on Ubuntu), let the game in:</p>
+<pre><code>sudo ufw allow 26500/udp</code></pre></div>
+      </div>
+    </section>
+
+    <section class="howto">
+      <h2>Good to know</h2>
+      <div class="facts facts-two">
+        <div><h3>Keys and pads</h3><p>A keyboard or a gamepad. Every game shows its keys as it begins; all of them, to look up and to change, are under pause (Escape), SETTINGS, CONTROLS. SETTINGS also has the volume, fullscreen and the language.</p></div>
+        <div><h3>A new version</h3><p>The launcher says when a new version is there. UPDATE NOW fetches it, checks it and puts it in place; what was there before goes to the folder <code>before-update</code>. Your own games, settings, high scores and saves stay. Looking for new versions can be switched off in the launcher.</p></div>
+        <div><h3>Removing it</h3><p>Delete the folder. Settings stay in <code>%APPDATA%\voxcade</code> (Windows) or <code>~/.config/voxcade</code> (Linux) until you delete that too; games you made are in <code>Voxcade</code> in your home folder.</p></div>
+        <div><h3>If it will not start</h3><p>If graphics are the trouble, Voxcade says so in a window: update your graphics driver. If the game runs slowly, SETTINGS, VIDEO, SHADOWS set lower helps. If nothing appears at all on Linux, start it from a terminal as in step 3.</p></div>
+      </div>
+      <p class="more"><a href="/quickstart.html">Your first game in five minutes</a></p>
+    </section>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p>Voxcade is made by <a href="https://sacrvm.dev/">SACRVM</a>. No cookies, no tracking.</p>
+    <p class="foot-links">
+      <a href="/blog/">Blog</a>
+      <a href="/imprint.html">Imprint &amp; privacy</a>
+      <span class="langs"><a href="/install.html" hreflang="en" lang="en" aria-current="true" title="English">EN</a> <a href="/de/install.html" hreflang="de" lang="de" title="Deutsch">DE</a></span>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,21 @@
+# The release the site offers: {{release.*}} in every page (tools/bake.py),
+# the date and sizes in each language's words. A new release: its files on
+# the voxca.de repo's releases (README.md), its post in posts/, then these.
+# The program reads this file too, to know of a new version
+# (https://voxca.de/release.toml): its package is taken only with the
+# sha256 here.
+version = "0.4.1"
+date = "2026-11-10"
+post = "0.4.1"          # posts/0.4.1/: what is new
+
+[windows]
+url = "https://github.com/SACRVM/voxca.de/releases/download/v0.4.1/voxcade-0.4.1-windows-x86_64.zip"
+file = "voxcade-0.4.1-windows-x86_64.zip"
+mb = 19.8
+sha256 = ""
+
+[linux]
+url = "https://github.com/SACRVM/voxca.de/releases/download/v0.4.1/voxcade-0.4.1-linux-x86_64.tar.gz"
+file = "voxcade-0.4.1-linux-x86_64.tar.gz"
+mb = 22.9
+sha256 = ""

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de">
+  <title>Voxcade · Blog</title>
+  <link href="https://voxca.de/de/blog/"/>
+  <link rel="self" href="https://voxca.de/de/blog/feed.xml"/>
+  <id>https://voxca.de/de/blog/</id>
+  <updated>2026-11-10T12:00:00Z</updated>
+  <author><name>SACRVM</name></author>
+  <entry>
+    <title>Voxcade 0.4.1, die erste Version</title>
+    <link href="https://voxca.de/de/blog/0.4.1.html"/>
+    <id>https://voxca.de/de/blog/0.4.1.html</id>
+    <updated>2026-11-10T12:00:00Z</updated>
+    <summary>Sechs Spiele und die Werkstatt für eigene, für Windows und Linux: entpacken, starten, spielen.</summary>
+    <content type="html">&lt;p&gt;Voxcade verlässt zum ersten Mal die Werkstatt. Version 0.4.1 ist ein Ordner mit sechs Spielen und allem, um eigene zu machen. Installieren musst du nichts: &lt;a href=&quot;https://voxca.de/de/#download&quot;&gt;herunterladen&lt;/a&gt;, entpacken und Voxcade doppelklicken. &lt;a href=&quot;https://voxca.de/de/install.html&quot;&gt;So installierst du es&lt;/a&gt; zeigt jeden Schritt, und der &lt;a href=&quot;https://voxca.de/de/quickstart.html&quot;&gt;Schnellstart&lt;/a&gt; bringt dich in fünf Minuten zu deinem ersten eigenen Spiel.&lt;/p&gt;
+&lt;h2&gt;Was drin ist&lt;/h2&gt;
+&lt;ul class=&quot;points&quot;&gt;&lt;li&gt;&lt;strong&gt;Der Launcher&lt;/strong&gt;: Starte Voxcade, und es zeigt die Spiele. PLAY startet eins, EDIT öffnet es in der IDE, der Werkstatt, in der Spiele entstehen, und NEW GAME beginnt ein eigenes aus einer Vorlage: Jump &amp;amp; Run, Shooter oder leer.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Sechs Spiele&lt;/strong&gt;, jedes ein Ordner aus Lua und Voxeln: More Blood (ein Run-and-Gun-Shooter, mit Pixel-Blut), Voxkeep (ein Jump &amp;amp; Run in einer Burg bei Nacht), Sokovox (Sokoban mit den Microban-Rätseln von David W. Skinner), Pulsar (ein Weltraum-Shooter im Takt der Musik, zu zweit), BunnyFarm (ein Farmspiel) und die Arena, ein Hof zum Zerlegen. Jedes zeigt beim Start seine Tasten, für Tastatur oder Gamepad, je nachdem, womit du spielst.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Die IDE&lt;/strong&gt;: der Code, mit den Namen der API beim Tippen angeboten, das Spiel läuft gleich daneben, seine Fehler zeigen auf die Zeile; Szenarien starten einen Lauf an jeder Stelle; HELP zeigt die Lua-API an Beispielen; BUILD packt ein Spiel zum Weitergeben. Editoren für Voxel-Modelle und für Level aus Voxel-Blöcken gehören dazu.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Zusammen spielen&lt;/strong&gt;: mehrere an einem Bildschirm, im Heimnetz und übers Internet mit einem Code aus sechs Zeichen (IM INTERNET ÖFFNEN, dann BEITRETEN und CODE EINGEBEN). Keine Ports zu öffnen; Freunde können einem laufenden Spiel beitreten.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Neue Versionen von selbst&lt;/strong&gt;: Der Launcher meldet, wenn es eine gibt, und UPDATE NOW holt sie, prüft sie und setzt sie ein. Deine Spiele, Einstellungen und Spielstände bleiben.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Sprachen&lt;/strong&gt;: Die Menüs der Spiele sprechen Deutsch, Englisch und Französisch und richten sich nach deinem System; BunnyFarm spricht alle drei durchgehend. Der Launcher und die IDE sind auf Englisch.&lt;/li&gt;&lt;/ul&gt;
+&lt;h2&gt;Gut zu wissen&lt;/h2&gt;
+&lt;ul class=&quot;points&quot;&gt;&lt;li&gt;&lt;strong&gt;Windows&lt;/strong&gt; warnt vielleicht, es habe deinen PC geschützt: Das Programm ist noch nicht signiert. Wähle &lt;em&gt;Weitere Informationen&lt;/em&gt;, dann &lt;em&gt;Trotzdem ausführen&lt;/em&gt;.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Linux&lt;/strong&gt; braucht Vulkan-Grafiktreiber und ein aktuelles System (Ubuntu 24.04, Linux Mint 22, Fedora 40, Debian 13 oder neuer).&lt;/li&gt;&lt;li&gt;&lt;strong&gt;macOS&lt;/strong&gt; ist in dieser Version nicht dabei.&lt;/li&gt;&lt;li&gt;Ein Spiel übers Internet, das keine direkte Verbindung findet, läuft über unser Relay und kann ab und zu kurz stocken.&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;Die Lizenzen der Bibliotheken, die im Programm stecken, stehen in &lt;code&gt;THIRD-PARTY-LICENSES.txt&lt;/code&gt; im Ordner.&lt;/p&gt;</content>
+  </entry>
+</feed>

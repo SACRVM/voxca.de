@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="{{meta.code}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{install.title}}</title>
+<meta name="description" content="{{install.description}}">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#050509">
+<link rel="canonical" href="{{canonical}}">
+{{alternates}}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Voxcade">
+<meta property="og:title" content="{{install.title}}">
+<meta property="og:description" content="{{install.description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:locale" content="{{meta.locale}}">
+<meta property="og:image" content="https://voxca.de/assets/img/og.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="preload" href="/assets/fonts/voxcade-pixel.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="alternate" type="application/atom+xml" href="{{home}}blog/feed.xml" title="{{blog.feed_title}}">
+</head>
+<body>
+{{header}}
+
+<main id="content" class="section page">
+  <div class="wrap">
+    <h1>{{install.heading}}</h1>
+    <p class="lead">{{install.lead}}</p>
+    <nav class="systems" aria-label="{{install.systems}}">
+      <a class="jump" href="#windows">Windows</a>
+      <a class="jump" href="#linux">Linux</a>
+    </nav>
+
+    <section id="windows" class="howto">
+      <h2>Windows</h2>
+      <p class="needs">{{download.windows_needs}}</p>
+      <ol class="steps">
+        <li><h3>{{install.get_title}}</h3><p>{{install.win_get}}</p>
+          <p><a class="button" href="{{release.windows_url}}">{{download.windows_button}}</a> <span class="download-file">{{release.windows_mb}}</span></p>
+          <p class="note">{{install.win_browser}}</p></li>
+        <li><h3>{{install.unpack_title}}</h3><p>{{install.win_unpack}}</p>
+          <p class="note">{{install.win_unblock}}</p></li>
+        <li><h3>{{install.start_title}}</h3><p>{{install.win_warn}}</p><p>{{install.win_start}}</p>
+          <figure class="shot shot-small"><img src="/assets/img/launcher.webp" width="800" height="530" loading="lazy" alt="{{install.launcher_alt}}"></figure></li>
+      </ol>
+      <div class="facts facts-two then">
+        <div><h3>{{install.ide_title}}</h3><p>{{install.win_ide}}</p></div>
+        <div><h3>{{install.network_title}}</h3><p>{{install.win_network}}</p></div>
+      </div>
+    </section>
+
+    <section id="linux" class="howto">
+      <h2>Linux</h2>
+      <p class="needs">{{download.linux_needs}}</p>
+      <ol class="steps">
+        <li><h3>{{install.get_title}}</h3><p>{{install.linux_get}}</p>
+          <p><a class="button" href="{{release.linux_url}}">{{download.linux_button}}</a> <span class="download-file">{{release.linux_mb}}</span></p></li>
+        <li><h3>{{install.unpack_title}}</h3><p>{{install.linux_unpack}}</p>
+<pre><code>tar xzf {{release.linux_file}}</code></pre></li>
+        <li><h3>{{install.start_title}}</h3><p>{{install.linux_start}}</p>
+<pre><code>cd voxcade-{{release.version}}-linux-x86_64
+./voxcade</code></pre>
+          <figure class="shot shot-small"><img src="/assets/img/launcher.webp" width="800" height="530" loading="lazy" alt="{{install.launcher_alt}}"></figure>
+          <p class="note">{{install.linux_silent}}</p>
+<pre><code>ldd --version</code></pre></li>
+      </ol>
+      <div class="facts facts-two then">
+        <div><h3>{{install.ide_title}}</h3><p>{{install.linux_ide}}</p></div>
+        <div><h3>{{install.network_title}}</h3><p>{{install.linux_network}}</p>
+<pre><code>sudo ufw allow 26500/udp</code></pre></div>
+      </div>
+    </section>
+
+    <section class="howto">
+      <h2>{{install.after_title}}</h2>
+      <div class="facts facts-two">
+        <div><h3>{{install.keys_title}}</h3><p>{{install.keys_text}}</p></div>
+        <div><h3>{{install.update_title}}</h3><p>{{install.update_text}}</p></div>
+        <div><h3>{{install.remove_title}}</h3><p>{{install.remove_text}}</p></div>
+        <div><h3>{{install.trouble_title}}</h3><p>{{install.trouble_text}}</p></div>
+      </div>
+      <p class="more"><a href="{{home}}quickstart.html">{{download.quickstart}}</a></p>
+    </section>
+  </div>
+</main>
+
+{{footer}}
+</body>
+</html>

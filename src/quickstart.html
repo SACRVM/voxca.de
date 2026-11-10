@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="{{meta.code}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{quick.title}}</title>
+<meta name="description" content="{{quick.description}}">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#050509">
+<link rel="canonical" href="{{canonical}}">
+{{alternates}}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Voxcade">
+<meta property="og:title" content="{{quick.title}}">
+<meta property="og:description" content="{{quick.description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:locale" content="{{meta.locale}}">
+<meta property="og:image" content="https://voxca.de/assets/img/og.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="preload" href="/assets/fonts/voxcade-pixel.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="alternate" type="application/atom+xml" href="{{home}}blog/feed.xml" title="{{blog.feed_title}}">
+</head>
+<body>
+{{header}}
+
+<main id="content" class="section page">
+  <div class="wrap">
+    <h1>{{quick.heading}}</h1>
+    <p class="lead">{{quick.lead}}</p>
+    <ol class="steps steps-h2">
+      <li><h2>{{quick.open_title}}</h2><p>{{quick.open_text}}</p></li>
+      <li><h2>{{quick.new_title}}</h2><p>{{quick.new_text}}</p></li>
+      <li><h2>{{quick.play_title}}</h2><p>{{quick.play_text}}</p>
+        <figure class="shot"><img src="/assets/img/quickstart-play.webp" width="1600" height="520" loading="lazy" alt="{{quick.play_alt}}"></figure></li>
+      <li><h2>{{quick.change_title}}</h2><p>{{quick.change_text}}</p>
+        <figure class="shot"><img src="/assets/img/quickstart-code.webp" width="1600" height="520" loading="lazy" alt="{{quick.change_alt}}"></figure>
+<pre><code>local BOUNCE = 50        -- how high a hero bounces off an enemy, voxels</code></pre>
+        <p>{{quick.change_after}}</p></li>
+      <li><h2>{{quick.shape_title}}</h2><p>{{quick.shape_text}}</p></li>
+      <li><h2>{{quick.share_title}}</h2><p>{{quick.share_text}}</p></li>
+    </ol>
+    <section class="howto">
+      <h2>{{quick.next_title}}</h2>
+      <ul class="points">
+        <li>{{quick.next_help}}</li>
+        <li>{{quick.next_games}}</li>
+        <li>{{quick.next_console}}</li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+{{footer}}
+</body>
+</html>

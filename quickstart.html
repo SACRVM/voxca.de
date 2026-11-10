@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quick start · Voxcade</title>
+<meta name="description" content="Your first game with Voxcade in five minutes: a jump and run from a template, played and changed while it runs.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#050509">
+<link rel="canonical" href="https://voxca.de/quickstart.html">
+<link rel="alternate" hreflang="en" href="https://voxca.de/quickstart.html">
+<link rel="alternate" hreflang="de" href="https://voxca.de/de/quickstart.html">
+<link rel="alternate" hreflang="x-default" href="https://voxca.de/quickstart.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Voxcade">
+<meta property="og:title" content="Quick start · Voxcade">
+<meta property="og:description" content="Your first game with Voxcade in five minutes: a jump and run from a template, played and changed while it runs.">
+<meta property="og:url" content="https://voxca.de/quickstart.html">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://voxca.de/assets/img/og.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="preload" href="/assets/fonts/voxcade-pixel.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="alternate" type="application/atom+xml" href="/blog/feed.xml" title="Voxcade · Blog">
+</head>
+<body>
+<a class="skip" href="#content">Skip to the content</a>
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="/">VOXCADE</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="/#games">Games</a>
+      <a href="/#make">Make</a>
+      <a href="/#together">Together</a>
+      <a class="keep" href="/#download">Download</a>
+      <a class="keep" href="/blog/">Blog</a>
+    </nav>
+    <nav class="langs" aria-label="Language"><a href="/quickstart.html" hreflang="en" lang="en" aria-current="true" title="English">EN</a> <a href="/de/quickstart.html" hreflang="de" lang="de" title="Deutsch">DE</a></nav>
+  </div>
+</header>
+
+<main id="content" class="section page">
+  <div class="wrap">
+    <h1>Your first game in five minutes</h1>
+    <p class="lead">From nothing to a jump &amp; run of your own: Voxcade makes the game from a template, you play it, and change it while it runs. Voxcade is <a href="/install.html">installed</a>? Then off you go.</p>
+    <ol class="steps steps-h2">
+      <li><h2>Start Voxcade</h2><p>Double-click <code>voxcade</code> in the Voxcade folder (<code>start-voxcade.sh</code> on Linux). The launcher opens, with the games to play and, below them, NEW GAME.</p></li>
+      <li><h2>A new game</h2><p>Choose NEW GAME, type a name, pick JUMP &amp; RUN and choose CREATE. Your game opens in the IDE, the workshop where games are made. It is a folder of its own, in <code>Voxcade</code> in your home folder (the gear at the top right changes where).</p></li>
+      <li><h2>Play it</h2><p>Press PLAY at the top right. The game shows its keys: the arrows run, Space jumps. Land on the slime, take the gems, out through the door. Escape takes you back to the code.</p>
+        <figure class="shot"><img src="/assets/img/quickstart-play.webp" width="1600" height="520" loading="lazy" alt="The IDE with the new jump and run playing in the main area, its files on the left."></figure></li>
+      <li><h2>Change a rule</h2><p>On the left, <code>main.lua</code> holds the game&#39;s rules. Near the top stands how high the hero bounces off an enemy. Change 50 to 150: the IDE saves by itself a second later. Press PLAY again: the game goes on where it was, with the new rule. Jump on the slime and see.</p>
+        <figure class="shot"><img src="/assets/img/quickstart-code.webp" width="1600" height="520" loading="lazy" alt="main.lua open in the IDE, the rules at the top."></figure>
+<pre><code>local BOUNCE = 50        -- how high a hero bounces off an enemy, voxels</code></pre>
+        <p>Every number with a comment is yours to change; <code>conf.lua</code> holds the game's settings, from the hero's speed to the camera.</p></li>
+      <li><h2>Shape it</h2><p>Double-click <code>hero.vox</code> under MODELS: the voxel editor opens in a window of its own. Paint the hero: every change is saved at once, and the game shows it. <code>level.json</code> under LEVELS opens the level editor: place blocks and things.</p></li>
+      <li><h2>Pass it on</h2><p>BUILD packs the program and your game into one zip file in the game's <code>builds</code> folder, ready to give to a friend.</p></li>
+    </ol>
+    <section class="howto">
+      <h2>Where next</h2>
+      <ul class="points">
+        <li>HELP in the IDE shows the Lua API by example: whole games to copy and change.</li>
+        <li>The six games lie in the <code>games</code> folder beside the program: EDIT in the launcher opens one, to see how it is made.</li>
+        <li>While a game plays, the key left of 1 opens the console: a line of Lua runs in the game, <code>player.state.score = 5000</code> for instance.</li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p>Voxcade is made by <a href="https://sacrvm.dev/">SACRVM</a>. No cookies, no tracking.</p>
+    <p class="foot-links">
+      <a href="/blog/">Blog</a>
+      <a href="/imprint.html">Imprint &amp; privacy</a>
+      <span class="langs"><a href="/quickstart.html" hreflang="en" lang="en" aria-current="true" title="English">EN</a> <a href="/de/quickstart.html" hreflang="de" lang="de" title="Deutsch">DE</a></span>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

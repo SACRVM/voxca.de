@@ -20,6 +20,26 @@ A new language: copy `lang/en.toml` to `lang/CODE.toml`, set its `meta`
 (`code`, `name`, `dir = "CODE/"`, `locale`) and translate. The bake names
 any key it lacks; the language links and `hreflang` follow by themselves.
 
+## A release and the blog
+
+The downloads are this repository's releases (it is public; the engine's
+repository is not). A new version, once the engine's Builds workflow has
+made its release (a `v*` tag there):
+
+```bash
+gh release download vX.Y.Z --repo SACRVM/voxcade --dir /tmp/vX.Y.Z
+gh release create vX.Y.Z /tmp/vX.Y.Z/* --repo SACRVM/voxca.de --title "Voxcade X.Y.Z" --notes "What is new: https://voxca.de/blog/X.Y.Z.html"
+```
+
+Then `release.toml` (version, date, the files' addresses, sizes in MB
+and `sha256`: `sha256sum` of each file; the program reads this file to
+know of a new version and takes a package only with that checksum, so
+push it only once the release's files are up) and a post: `posts/X.Y.Z/en.md` and `de.md`, each a head of
+`title`, `date` and `summary`, then Markdown (`##` headings, lists,
+links, `code`): what is new, what changed, what was mended. Bake, look,
+push. The blog lists the posts newest first and writes `blog/feed.xml`
+(Atom) in each language.
+
 ## Fonts, icons, pictures
 
 - `assets/fonts/voxcade-pixel.woff2`: the pixel font of the engine's menus,
@@ -36,6 +56,12 @@ voxcade shot games/pulsar --replay games/pulsar/replays/tests/two_ships.toml --f
 voxcade film games/voxkeep games/voxkeep/replays/demo.toml --from 24 --to 30 --size 1280x720 --out shots/voxkeep.mp4
 voxcade ide games/voxkeep --shot shots/ide.png --play 600 --size 1600x900
 ```
+
+  The quick start's pictures are a copy of the jump & run template
+  (`templates/platformer`) as "My Game", drawn with an empty config
+  folder (`XDG_CONFIG_HOME`) so no paths of this machine show:
+  `voxcade ide "My Game" --shot ... --play 420` and `--open main.lua`,
+  cut to 1600 by 520.
 
   The logo is a scratch game whose title says VOXCADE
   (`c.title_screen.logo = { "VOXCADE" }`, `logo_colors = { "#ffb347" }`),

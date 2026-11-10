@@ -23,25 +23,13 @@
 <link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
 <link rel="preload" href="/assets/fonts/voxcade-pixel.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/site.css">
+<link rel="alternate" type="application/atom+xml" href="{{home}}blog/feed.xml" title="{{blog.feed_title}}">
 <script src="/assets/site.js" defer></script>
 </head>
 <body>
-<a class="skip" href="#games">{{site.skip}}</a>
+{{header}}
 
-<header class="bar">
-  <div class="wrap bar-in">
-    <a class="brand" href="{{home}}">VOXCADE</a>
-    <nav class="nav" aria-label="{{nav.label}}">
-      <a href="#games">{{nav.games}}</a>
-      <a href="#make">{{nav.make}}</a>
-      <a href="#together">{{nav.together}}</a>
-      <a href="#inside">{{nav.inside}}</a>
-    </nav>
-    <nav class="langs" aria-label="{{footer.language}}">{{languages}}</nav>
-  </div>
-</header>
-
-<main>
+<main id="content">
   <section class="hero">
     <div class="wrap">
       <h1 class="logo">
@@ -52,18 +40,19 @@
 
       <figure class="screen">
         <video class="attract" muted loop playsinline preload="metadata" poster="/assets/img/hero-poster.webp"
-               width="1280" height="720" aria-label="{{hero.video}}">
+               width="1280" height="720" tabindex="0" aria-label="{{hero.video}} {{hero.pause}}">
           <source src="{{media.hero}}" type="video/mp4">
         </video>
-        <figcaption>{{hero.video}}</figcaption>
+        <figcaption>{{hero.video}} {{hero.pause}}</figcaption>
       </figure>
 
       <div class="hero-foot">
         <div>
           <p class="intro">{{hero.intro}}</p>
-          <p class="status"><span class="blink" aria-hidden="true"></span>{{hero.status}}</p>
+          <p class="status"><span class="blink" aria-hidden="true"></span><a href="#download">{{hero.status}}</a></p>
         </div>
         <nav class="menu" aria-label="{{hero.menu}}">
+          <a href="#download">{{hero.menu_download}}</a>
           <a href="#games">{{hero.menu_games}}</a>
           <a href="#make">{{hero.menu_make}}</a>
           <a href="#together">{{hero.menu_together}}</a>
@@ -121,6 +110,33 @@
     </div>
   </section>
 
+  <section id="download" class="section">
+    <div class="wrap">
+      <h2>{{download.title}}</h2>
+      <p class="lead">{{download.lead}}</p>
+      <div class="downloads">
+        <div class="download">
+          <h3>Windows</h3>
+          <p class="needs">{{download.windows_needs}}</p>
+          <a class="button" href="{{release.windows_url}}">{{download.windows_button}}</a>
+          <p class="download-file">{{release.windows_file}} · {{release.windows_mb}}</p>
+        </div>
+        <div class="download">
+          <h3>Linux</h3>
+          <p class="needs">{{download.linux_needs}}</p>
+          <a class="button" href="{{release.linux_url}}">{{download.linux_button}}</a>
+          <p class="download-file">{{release.linux_file}} · {{release.linux_mb}}</p>
+        </div>
+      </div>
+      <ul class="next-steps">
+        <li><a href="{{home}}install.html">{{download.install}}</a></li>
+        <li><a href="{{home}}quickstart.html">{{download.quickstart}}</a></li>
+        <li><a href="{{release.notes}}">{{download.notes}}</a></li>
+      </ul>
+      <p class="aside">{{download.where}}</p>
+    </div>
+  </section>
+
   <section id="make" class="section">
     <div class="wrap">
       <h2>{{make.title}}</h2>
@@ -171,6 +187,7 @@
       <figure class="shot shot-narrow">
         <img src="/assets/img/editor.webp" width="1280" height="720" loading="lazy" alt="{{make.editor_alt}}">
       </figure>
+      <p class="more"><a href="{{home}}quickstart.html">{{make.quickstart}}</a></p>
     </div>
   </section>
 
@@ -183,6 +200,7 @@
         <h2>{{together.title}}</h2>
         <p class="lead">{{together.lead}}</p>
         <ul class="points">
+          <li>{{together.point_internet}}</li>
           <li>{{together.point_forms}}</li>
           <li>{{together.point_seats}}</li>
           <li>{{together.point_record}}</li>
@@ -213,7 +231,6 @@
         <h2>{{next.title}}</h2>
         <p>{{next.text}}</p>
         <ul class="points">
-          <li>{{next.internet}}</li>
           <li>{{next.jam}}</li>
           <li>{{next.genres}}</li>
         </ul>

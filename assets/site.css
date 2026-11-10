@@ -89,7 +89,9 @@ h3 { font-size: 20px; line-height: 1.4; color: var(--cream); text-transform: upp
 .hero-foot { display: grid; grid-template-columns: 1fr auto; gap: 48px; max-width: 960px; margin: 40px auto 0; align-items: start; }
 .intro { font-size: 20px; color: var(--text); }
 .status { font-size: 20px; color: var(--orange); text-transform: uppercase; margin: 0; }
-.blink { display: inline-block; width: 0.5em; height: 0.7em; background: currentColor; margin-right: 0.6em; vertical-align: -0.02em; animation: blink 1s steps(1) infinite; }
+.status a { color: inherit; text-decoration-color: var(--orange); }
+.status a:hover { color: var(--red); }
+.blink { display: inline-block; width: 0.5em; height: 0.7em; background: currentColor; margin-right: 0.6em; vertical-align: -0.02em; animation: blink 1s steps(1) 5; }
 @keyframes blink { 50% { opacity: 0; } }
 
 /* As the title menu: the first item red with its cursor, until another is
@@ -142,6 +144,7 @@ pre .o { color: var(--muted); }
 .shot { margin: 48px 0 0; }
 .shot img { width: 100%; border: 1px solid var(--line); }
 .shot-narrow { max-width: 760px; }
+.shot-small { max-width: 560px; }
 .trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; margin-top: 32px; }
 .trio p, .facts p { font-size: 17px; }
 
@@ -177,20 +180,82 @@ pre .o { color: var(--muted); }
 .gameover h1 { color: var(--red); font-size: 60px; }
 .gameover .brand { display: block; margin-bottom: 24px; }
 
+/* The download: a card a system, the button the one thing to press. */
+.downloads { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 32px; }
+.download { background: var(--panel); border: 1px solid var(--line); padding: 24px 26px 18px; display: flex; flex-direction: column; align-items: flex-start; }
+.download h3 { font-size: 30px; margin-bottom: 8px; }
+.needs { color: var(--muted); font-size: 16px; }
+.download .needs { flex: 1; }
+.button {
+  display: inline-block; font: 20px/1.2 var(--pixel); text-transform: uppercase; text-decoration: none;
+  background: var(--orange); color: var(--bg); padding: 12px 20px; border: 0;
+}
+.button:hover, .button:focus-visible { background: var(--red); color: var(--cream); outline: none; }
+.button:focus-visible { box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px var(--cream); }
+.download-file { font-size: 14px; color: var(--muted); margin: 10px 0 0; overflow-wrap: anywhere; }
+.next-steps { list-style: none; padding: 0; margin: 32px 0 0; display: flex; flex-wrap: wrap; gap: 12px 36px; }
+.next-steps a, .more a { font: 20px/1.4 var(--pixel); text-transform: uppercase; color: var(--cream); text-decoration: none; }
+.next-steps a::before, .more a::before { content: "> "; color: var(--orange); }
+.next-steps a:hover, .more a:hover { color: var(--red); }
+.aside { color: var(--muted); font-size: 16px; margin: 20px 0 0; }
+.more { margin: 32px 0 0; }
+
+/* Pages of their own: install, quick start, the blog. */
+.page { border-top: 0; padding-top: 48px; }
+.page h1 { font-size: 40px; line-height: 1.2; color: var(--cream); text-transform: uppercase; margin: 0 0 16px; }
+.systems { display: flex; gap: 32px; margin: 28px 0 8px; }
+.jump { font: 20px/1.4 var(--pixel); text-transform: uppercase; color: var(--cream); text-decoration: none; }
+.jump::before { content: "> "; color: var(--orange); }
+.jump:hover { color: var(--red); }
+.howto { margin-top: 56px; }
+.howto h2 { margin-bottom: 8px; }
+.howto > .needs { margin-bottom: 24px; }
+.steps { list-style: none; counter-reset: step; padding: 0; margin: 28px 0 0; max-width: 820px; }
+.steps > li { counter-increment: step; position: relative; padding-left: 64px; margin-bottom: 36px; }
+.steps > li::before {
+  content: counter(step); position: absolute; left: 0; top: -2px; width: 40px; height: 40px;
+  font: 30px/40px var(--pixel); text-align: center; background: var(--panel); border: 1px solid var(--line); color: var(--orange);
+}
+.steps h3, .steps-h2 h2 { font-size: 20px; line-height: 1.4; margin: 0 0 6px; }
+.note { color: var(--muted); font-size: 16px; }
+.then { margin-top: 8px; padding-left: 64px; max-width: 884px; }
+.attract { cursor: pointer; }
+.attract:focus-visible { outline: 3px solid var(--cream); outline-offset: 3px; }
+.steps .shot { margin: 16px 0; }
+.steps pre { margin: 12px 0; }
+.facts-two { grid-template-columns: 1fr 1fr; margin-top: 24px; max-width: 900px; }
+.posts { margin-top: 32px; max-width: 760px; }
+.post-item { border-top: 1px solid var(--line); padding: 24px 0 8px; }
+.post-item h2 { font-size: 30px; margin: 0 0 10px; text-transform: none; }
+.post-item h2 a { color: var(--cream); text-decoration: none; }
+.post-item h2 a:hover { color: var(--red); }
+.post-date { font-size: 15px; color: var(--muted); margin: 0 0 8px; }
+.post-date a { color: var(--muted); }
+.post { max-width: 760px; }
+.post h1 { text-transform: none; }
+.post h2 { font-size: 30px; margin: 40px 0 12px; }
+.post .points li { margin-bottom: 12px; }
+
 @media (max-width: 1060px) {
   .split:not(.split-media) { grid-template-columns: 1fr; gap: 28px; }
 }
 @media (max-width: 900px) {
-  /* The hero's menu leads to the sections; the bar keeps the name and
-     the languages. */
-  .bar .nav { display: none; }
-  .bar .nav + .langs { margin-left: auto; padding-left: 0; border-left: 0; }
+  /* The hero's menu leads to the sections; the bar keeps the name, the
+     download, the blog and the languages. */
+  .bar .nav { gap: 18px; }
+  .bar .nav a:not(.keep) { display: none; }
+  .bar .nav + .langs { margin-left: 0; padding-left: 18px; }
+  .downloads, .facts-two { grid-template-columns: 1fr; }
   .games, .split-media, .trio { grid-template-columns: 1fr; }
   .facts { grid-template-columns: 1fr 1fr; }
   .hero-foot { grid-template-columns: 1fr; gap: 28px; }
 }
 @media (max-width: 640px) {
   .wrap { padding: 0 16px; }
+  /* The name, DOWNLOAD, BLOG and the languages on one line. */
+  .bar-in, .bar .nav { gap: 14px; }
+  .bar .nav + .langs { padding-left: 14px; }
+  .langs { gap: 10px; }
   body { font-size: 17px; }
   h2, .legal h1 { font-size: 30px; }
   .tagline { font-size: 20px; margin: 20px 0 28px; }
@@ -201,6 +266,11 @@ pre .o { color: var(--muted); }
   .game h3 { font-size: 20px; }
   .facts { grid-template-columns: 1fr; }
   .next { padding: 24px 20px 12px; }
+  .page h1 { font-size: 30px; }
+  .post h2, .post-item h2 { font-size: 20px; }
+  .steps > li { padding-left: 52px; }
+  .then { padding-left: 52px; }
+  .download h3 { font-size: 20px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Quick start · Voxcade</title>
-<meta name="description" content="Your first game with Voxcade in five minutes: a jump and run from a template, played and changed while it runs.">
+<meta name="description" content="Your first game with Voxcade in five minutes: a jump and run from a template, played and changed, one step and one picture at a time.">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#050509">
 <link rel="canonical" href="https://voxca.de/quickstart.html">
@@ -14,7 +14,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Voxcade">
 <meta property="og:title" content="Quick start · Voxcade">
-<meta property="og:description" content="Your first game with Voxcade in five minutes: a jump and run from a template, played and changed while it runs.">
+<meta property="og:description" content="Your first game with Voxcade in five minutes: a jump and run from a template, played and changed, one step and one picture at a time.">
 <meta property="og:url" content="https://voxca.de/quickstart.html">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://voxca.de/assets/img/og.png">
@@ -43,26 +43,29 @@
 <main id="content" class="section page">
   <div class="wrap">
     <h1>Your first game in five minutes</h1>
-    <p class="lead">From nothing to a jump &amp; run of your own: Voxcade makes the game from a template, you play it, and change it while it runs. Voxcade is <a href="/install.html">installed</a>? Then off you go.</p>
+    <p class="lead">You will make a jump &amp; run from a template, play it, and change one of its rules. Six steps, each with a picture of what you see. Voxcade is <a href="/install.html">installed</a>? Then off you go.</p>
     <ol class="steps steps-h2">
-      <li><h2>Start Voxcade</h2><p>Double-click <code>voxcade</code> in the Voxcade folder (<code>start-voxcade.sh</code> on Linux). The launcher opens, with the games to play and, below them, NEW GAME.</p></li>
-      <li><h2>A new game</h2><p>Choose NEW GAME, type a name, pick JUMP &amp; RUN and choose CREATE. Your game opens in the IDE, the workshop where games are made. It is a folder of its own, in <code>Voxcade</code> in your home folder (the gear at the top right changes where).</p></li>
-      <li><h2>Play it</h2><p>Press PLAY at the top right. The game shows its keys: the arrows run, Space jumps. Land on the slime, take the gems, out through the door. Escape takes you back to the code.</p>
-        <figure class="shot"><img src="/assets/img/quickstart-play.webp" width="1600" height="520" loading="lazy" alt="The IDE with the new jump and run playing in the main area, its files on the left."><figcaption>Your new game: the JUMP &amp; RUN template is a castle room with a hero, a slime, a bat and gems, yours to change.</figcaption></figure></li>
-      <li><h2>Change a rule</h2><p>On the left, <code>main.lua</code> holds the game&#39;s rules. Near the top stands how high the hero bounces off an enemy. Change 50 to 150: the IDE saves by itself a second later. Press PLAY again: the game goes on where it was, with the new rule. Jump on the slime and see.</p>
-        <figure class="shot"><img src="/assets/img/quickstart-code.webp" width="1600" height="520" loading="lazy" alt="main.lua open in the IDE, the rules at the top."></figure>
-<pre><code>local BOUNCE = 50        -- how high a hero bounces off an enemy, voxels</code></pre>
-        <p>Every number with a comment is yours to change; <code>conf.lua</code> holds the game's settings, from the hero's speed to the camera.</p></li>
-      <li><h2>Shape it</h2><p>Double-click <code>hero.vox</code> under MODELS: the voxel editor opens in a window of its own. Paint the hero: every change is saved at once, and the game shows it. <code>level.json</code> under LEVELS opens the level editor: place blocks and things.</p></li>
-      <li><h2>Pass it on</h2><p>BUILD packs the program and your game into one zip file in the game's <code>builds</code> folder, ready to give to a friend.</p></li>
+      <li><h2>Start Voxcade</h2><p>Double-click <code>voxcade</code> in the Voxcade folder (<code>start-voxcade.sh</code> on Linux). This opens the launcher.</p>
+        <figure class="shot"><img src="/assets/img/quickstart-1-launcher.webp" width="1100" height="700" loading="lazy" alt="The launcher: the games as cards, NEW GAME at the bottom left."></figure></li>
+      <li><h2>Choose NEW GAME</h2><p>It is at the bottom left. Type a name for your game, pick JUMP &amp; RUN, then choose CREATE.</p>
+        <figure class="shot shot-small"><img src="/assets/img/quickstart-2-new.webp" width="640" height="500" loading="lazy" alt="The NEW GAME form: a name typed, JUMP & RUN picked, CREATE below."></figure></li>
+      <li><h2>Your game opens</h2><p>This is the IDE, the workshop where games are made. On the left are your game's files; in the middle is <code>main.lua</code>, the file with its rules. You need not read it now.</p>
+        <figure class="shot"><img src="/assets/img/quickstart-3-ide.webp" width="1600" height="520" loading="lazy" alt="The IDE: the game's files on the left, main.lua in the middle, PLAY at the top right."></figure></li>
+      <li><h2>Press PLAY</h2><p>It is at the top right. Your game runs where the file was: a castle room with a hero, a slime, a bat and gems. The arrows run, Space jumps. Jump onto the slime and watch how high the hero bounces off.</p>
+        <figure class="shot"><img src="/assets/img/quickstart-play.webp" width="1600" height="520" loading="lazy" alt="The new game playing in the IDE: a castle room, the hero at the left, the keys shown below."></figure></li>
+      <li><h2>Change a rule</h2><p>Press Escape: the file is back. In line 11 stands how high the hero bounces off an enemy. Change 50 to 150. There is nothing to save, the IDE does that by itself.</p>
+        <figure class="shot"><img src="/assets/img/quickstart-code.webp" width="1120" height="420" loading="lazy" alt="main.lua in the IDE, line 11 now reading local BOUNCE = 150."></figure></li>
+      <li><h2>Press PLAY again</h2><p>Jump onto the slime once more: the hero now flies three times as high. You have changed your game.</p></li>
     </ol>
+    <p class="done">That is the whole way of working: play, press Escape, change something, play again. Every number with a comment in <code>main.lua</code> and <code>conf.lua</code> is yours to change.</p>
     <section class="howto">
       <h2>Where next</h2>
-      <ul class="points">
-        <li>HELP in the IDE shows the Lua API by example: whole games to copy and change.</li>
-        <li>The five games lie in the <code>games</code> folder beside the program: EDIT in the launcher opens one, to see how it is made.</li>
-        <li>While a game plays, the key left of 1 opens the console: a line of Lua runs in the game, <code>player.state.score = 5000</code> for instance.</li>
-      </ul>
+      <div class="facts facts-two">
+        <div><h3>Change how it looks</h3><p>Double-click <code>hero.vox</code> under MODELS on the left: the voxel editor opens in a window of its own. Paint the hero; every change is saved at once, and the game shows it.</p></div>
+        <div><h3>Build the room</h3><p>Double-click <code>level.json</code> under LEVELS: the level editor opens. Place blocks, gems and enemies.</p></div>
+        <div><h3>Pass it on</h3><p>BUILD at the top right packs the program and your game into one zip file in the game's <code>builds</code> folder, ready to give to a friend.</p></div>
+        <div><h3>Learn more</h3><p>HELP at the top right shows what your code can do, by example: whole small games to copy and change. The five games that come with Voxcade open with EDIT in the launcher, to see how they are made.</p></div>
+      </div>
     </section>
   </div>
 </main>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Schnellstart · Voxcade</title>
-<meta name="description" content="Dein erstes Spiel mit Voxcade in fünf Minuten: ein Jump and Run aus einer Vorlage, gespielt und verändert, während es läuft.">
+<meta name="description" content="Dein erstes Spiel mit Voxcade in fünf Minuten: ein Jump and Run aus einer Vorlage, gespielt und verändert, Schritt für Schritt mit Bild.">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#050509">
 <link rel="canonical" href="https://voxca.de/de/quickstart.html">
@@ -14,7 +14,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Voxcade">
 <meta property="og:title" content="Schnellstart · Voxcade">
-<meta property="og:description" content="Dein erstes Spiel mit Voxcade in fünf Minuten: ein Jump and Run aus einer Vorlage, gespielt und verändert, während es läuft.">
+<meta property="og:description" content="Dein erstes Spiel mit Voxcade in fünf Minuten: ein Jump and Run aus einer Vorlage, gespielt und verändert, Schritt für Schritt mit Bild.">
 <meta property="og:url" content="https://voxca.de/de/quickstart.html">
 <meta property="og:locale" content="de_DE">
 <meta property="og:image" content="https://voxca.de/assets/img/og.png">
@@ -43,26 +43,29 @@
 <main id="content" class="section page">
   <div class="wrap">
     <h1>Dein erstes Spiel in fünf Minuten</h1>
-    <p class="lead">Von nichts zu deinem eigenen Jump &amp; Run: Voxcade macht das Spiel aus einer Vorlage, du spielst es und änderst es, während es läuft. Voxcade ist <a href="/de/install.html">installiert</a>? Dann los.</p>
+    <p class="lead">Du machst ein Jump &amp; Run aus einer Vorlage, spielst es und änderst eine seiner Regeln. Sechs Schritte, jeder mit einem Bild von dem, was du siehst. Voxcade ist <a href="/de/install.html">installiert</a>? Dann los.</p>
     <ol class="steps steps-h2">
-      <li><h2>Voxcade starten</h2><p>Doppelklick auf <code>voxcade</code> im Voxcade-Ordner (unter Linux <code>start-voxcade.sh</code>). Der Launcher öffnet sich, mit den Spielen und darunter NEW GAME.</p></li>
-      <li><h2>Ein neues Spiel</h2><p>Wähle NEW GAME, tipp einen Namen, wähl JUMP &amp; RUN und dann CREATE. Dein Spiel öffnet sich in der IDE, der Werkstatt, in der Spiele entstehen. Es ist ein eigener Ordner, in <code>Voxcade</code> in deinem Benutzerordner (das Zahnrad oben rechts ändert, wo).</p></li>
-      <li><h2>Spielen</h2><p>Drück PLAY oben rechts. Das Spiel zeigt seine Tasten: Die Pfeiltasten laufen, die Leertaste springt. Lande auf dem Schleim, sammle die Edelsteine, raus durch die Tür. Escape bringt dich zurück zum Code.</p>
-        <figure class="shot"><img src="/assets/img/quickstart-play.webp" width="1600" height="520" loading="lazy" alt="Die IDE mit dem neuen Jump and Run im Hauptbereich, links seine Dateien."><figcaption>Dein neues Spiel: Die Vorlage JUMP &amp; RUN ist ein Burgraum mit Held, Schleim, Fledermaus und Edelsteinen, zum Verändern.</figcaption></figure></li>
-      <li><h2>Eine Regel ändern</h2><p>Links enthält <code>main.lua</code> die Regeln des Spiels. Weit oben steht, wie hoch der Held von einem Gegner abprallt. Mach aus 50 eine 150: Die IDE speichert eine Sekunde später von selbst. Drück wieder PLAY: Das Spiel geht weiter, wo es war, mit der neuen Regel. Spring auf den Schleim und sieh selbst.</p>
-        <figure class="shot"><img src="/assets/img/quickstart-code.webp" width="1600" height="520" loading="lazy" alt="main.lua in der IDE geöffnet, oben die Regeln."></figure>
-<pre><code>local BOUNCE = 50        -- how high a hero bounces off an enemy, voxels</code></pre>
-        <p>Jede Zahl mit Kommentar darfst du ändern; <code>conf.lua</code> enthält die Einstellungen des Spiels, vom Tempo des Helden bis zur Kamera.</p></li>
-      <li><h2>Gestalten</h2><p>Doppelklick auf <code>hero.vox</code> unter MODELS: Der Voxel-Editor öffnet sich in einem eigenen Fenster. Mal den Helden um: Jede Änderung wird sofort gespeichert, und das Spiel zeigt sie. <code>level.json</code> unter LEVELS öffnet den Level-Editor: Blöcke und Dinge setzen.</p></li>
-      <li><h2>Weitergeben</h2><p>BUILD packt das Programm und dein Spiel in eine Zip-Datei im Ordner <code>builds</code> des Spiels, fertig zum Weitergeben.</p></li>
+      <li><h2>Voxcade starten</h2><p>Doppelklick auf <code>voxcade</code> im Voxcade-Ordner (unter Linux <code>start-voxcade.sh</code>). Damit öffnet sich der Launcher.</p>
+        <figure class="shot"><img src="/assets/img/quickstart-1-launcher.webp" width="1100" height="700" loading="lazy" alt="Der Launcher: die Spiele als Karten, unten links NEW GAME."></figure></li>
+      <li><h2>NEW GAME wählen</h2><p>Der Knopf steht unten links. Tipp einen Namen für dein Spiel, wähl JUMP &amp; RUN und dann CREATE.</p>
+        <figure class="shot shot-small"><img src="/assets/img/quickstart-2-new.webp" width="640" height="500" loading="lazy" alt="Das Formular NEW GAME: ein Name getippt, JUMP & RUN gewählt, darunter CREATE."></figure></li>
+      <li><h2>Dein Spiel öffnet sich</h2><p>Das ist die IDE, die Werkstatt, in der Spiele entstehen. Links stehen die Dateien deines Spiels; in der Mitte steht <code>main.lua</code>, die Datei mit seinen Regeln. Lesen musst du sie jetzt nicht.</p>
+        <figure class="shot"><img src="/assets/img/quickstart-3-ide.webp" width="1600" height="520" loading="lazy" alt="Die IDE: links die Dateien des Spiels, in der Mitte main.lua, oben rechts PLAY."></figure></li>
+      <li><h2>PLAY drücken</h2><p>Der Knopf steht oben rechts. Dein Spiel läuft dort, wo eben die Datei stand: ein Burgraum mit Held, Schleim, Fledermaus und Edelsteinen. Die Pfeiltasten laufen, die Leertaste springt. Spring auf den Schleim und sieh, wie hoch der Held abprallt.</p>
+        <figure class="shot"><img src="/assets/img/quickstart-play.webp" width="1600" height="520" loading="lazy" alt="Das neue Spiel läuft in der IDE: ein Burgraum, links der Held, unten die Tasten."></figure></li>
+      <li><h2>Eine Regel ändern</h2><p>Drück Escape: Die Datei ist wieder da. In Zeile 11 steht, wie hoch der Held von einem Gegner abprallt. Mach aus 50 eine 150. Speichern musst du nicht, das macht die IDE von selbst.</p>
+        <figure class="shot"><img src="/assets/img/quickstart-code.webp" width="1120" height="420" loading="lazy" alt="main.lua in der IDE, in Zeile 11 steht jetzt local BOUNCE = 150."></figure></li>
+      <li><h2>Wieder PLAY drücken</h2><p>Spring noch einmal auf den Schleim: Der Held fliegt jetzt dreimal so hoch. Du hast dein Spiel verändert.</p></li>
     </ol>
+    <p class="done">So arbeitest du immer: spielen, Escape, etwas ändern, wieder spielen. Jede Zahl mit Kommentar in <code>main.lua</code> und <code>conf.lua</code> darfst du ändern.</p>
     <section class="howto">
       <h2>Wie es weitergeht</h2>
-      <ul class="points">
-        <li>HELP in der IDE zeigt die Lua-API an Beispielen: ganze Spiele zum Kopieren und Ändern.</li>
-        <li>Die fünf Spiele liegen im Ordner <code>games</code> neben dem Programm: EDIT im Launcher öffnet eins, um zu sehen, wie es gemacht ist.</li>
-        <li>Während ein Spiel läuft, öffnet die Taste links neben der 1 die Konsole: Eine Zeile Lua läuft im Spiel, zum Beispiel <code>player.state.score = 5000</code>.</li>
-      </ul>
+      <div class="facts facts-two">
+        <div><h3>Das Aussehen ändern</h3><p>Doppelklick links auf <code>hero.vox</code> unter MODELS: Der Voxel-Editor öffnet sich in einem eigenen Fenster. Mal den Helden um; jede Änderung wird sofort gespeichert, und das Spiel zeigt sie.</p></div>
+        <div><h3>Den Raum bauen</h3><p>Doppelklick auf <code>level.json</code> unter LEVELS: Der Level-Editor öffnet sich. Setz Blöcke, Edelsteine und Gegner.</p></div>
+        <div><h3>Weitergeben</h3><p>BUILD oben rechts packt das Programm und dein Spiel in eine Zip-Datei im Ordner <code>builds</code> des Spiels, fertig zum Weitergeben.</p></div>
+        <div><h3>Mehr lernen</h3><p>HELP oben rechts zeigt an Beispielen, was dein Code kann: ganze kleine Spiele zum Kopieren und Ändern. Die fünf Spiele, die Voxcade mitbringt, öffnest du im Launcher mit EDIT, um zu sehen, wie sie gemacht sind.</p></div>
+      </div>
     </section>
   </div>
 </main>

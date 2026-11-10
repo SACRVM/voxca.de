@@ -30,24 +30,27 @@
     <h1>{{quick.heading}}</h1>
     <p class="lead">{{quick.lead}}</p>
     <ol class="steps steps-h2">
-      <li><h2>{{quick.open_title}}</h2><p>{{quick.open_text}}</p></li>
-      <li><h2>{{quick.new_title}}</h2><p>{{quick.new_text}}</p></li>
-      <li><h2>{{quick.play_title}}</h2><p>{{quick.play_text}}</p>
-        <figure class="shot"><img src="/assets/img/quickstart-play.webp" width="1600" height="520" loading="lazy" alt="{{quick.play_alt}}"><figcaption>{{quick.play_caption}}</figcaption></figure></li>
-      <li><h2>{{quick.change_title}}</h2><p>{{quick.change_text}}</p>
-        <figure class="shot"><img src="/assets/img/quickstart-code.webp" width="1600" height="520" loading="lazy" alt="{{quick.change_alt}}"></figure>
-<pre><code>local BOUNCE = 50        -- how high a hero bounces off an enemy, voxels</code></pre>
-        <p>{{quick.change_after}}</p></li>
-      <li><h2>{{quick.shape_title}}</h2><p>{{quick.shape_text}}</p></li>
-      <li><h2>{{quick.share_title}}</h2><p>{{quick.share_text}}</p></li>
+      <li><h2>{{quick.s1_title}}</h2><p>{{quick.s1_text}}</p>
+        <figure class="shot"><img src="/assets/img/quickstart-1-launcher.webp" width="1100" height="700" loading="lazy" alt="{{quick.s1_alt}}"></figure></li>
+      <li><h2>{{quick.s2_title}}</h2><p>{{quick.s2_text}}</p>
+        <figure class="shot shot-small"><img src="/assets/img/quickstart-2-new.webp" width="640" height="500" loading="lazy" alt="{{quick.s2_alt}}"></figure></li>
+      <li><h2>{{quick.s3_title}}</h2><p>{{quick.s3_text}}</p>
+        <figure class="shot"><img src="/assets/img/quickstart-3-ide.webp" width="1600" height="520" loading="lazy" alt="{{quick.s3_alt}}"></figure></li>
+      <li><h2>{{quick.s4_title}}</h2><p>{{quick.s4_text}}</p>
+        <figure class="shot"><img src="/assets/img/quickstart-play.webp" width="1600" height="520" loading="lazy" alt="{{quick.s4_alt}}"></figure></li>
+      <li><h2>{{quick.s5_title}}</h2><p>{{quick.s5_text}}</p>
+        <figure class="shot"><img src="/assets/img/quickstart-code.webp" width="1120" height="420" loading="lazy" alt="{{quick.s5_alt}}"></figure></li>
+      <li><h2>{{quick.s6_title}}</h2><p>{{quick.s6_text}}</p></li>
     </ol>
+    <p class="done">{{quick.done}}</p>
     <section class="howto">
       <h2>{{quick.next_title}}</h2>
-      <ul class="points">
-        <li>{{quick.next_help}}</li>
-        <li>{{quick.next_games}}</li>
-        <li>{{quick.next_console}}</li>
-      </ul>
+      <div class="facts facts-two">
+        <div><h3>{{quick.shape_title}}</h3><p>{{quick.shape_text}}</p></div>
+        <div><h3>{{quick.level_title}}</h3><p>{{quick.level_text}}</p></div>
+        <div><h3>{{quick.share_title}}</h3><p>{{quick.share_text}}</p></div>
+        <div><h3>{{quick.help_title}}</h3><p>{{quick.help_text}}</p></div>
+      </div>
     </section>
   </div>
 </main>

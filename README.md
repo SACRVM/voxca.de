@@ -56,11 +56,13 @@ voxcade film games/voxkeep games/voxkeep/replays/demo.toml --from 24 --to 30 --s
 voxcade ide games/voxkeep --shot shots/ide.png --play 600 --size 1600x900
 ```
 
-  The quick start's pictures are a copy of the jump & run template
-  (`templates/platformer`) as "My Game", drawn with an empty config
-  folder (`XDG_CONFIG_HOME`) so no paths of this machine show:
-  `voxcade ide "My Game" --shot ... --play 420` and `--open main.lua`,
-  cut to 1600 by 520.
+  The quick start's pictures, one a step, are drawn with an empty config
+  folder (`XDG_CONFIG_HOME`, its `voxcade/ide/settings/ide.toml` saying
+  `projects = "/home/you/Voxcade"`, so no path of this machine shows):
+  the launcher (`voxcade ide --shot`), NEW GAME's form (`--open "new:My
+  Game"`), then on a copy of the jump & run template as "My Game" the
+  IDE (`--open main.lua`), the game (`--play 300`) and the file with
+  `BOUNCE = 150`; the IDE's cut to 1600 by 520.
 
   The logo is a scratch game whose title says VOXCADE
   (`c.title_screen.logo = { "VOXCADE" }`, `logo_colors = { "#ffb347" }`),

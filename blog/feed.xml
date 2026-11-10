@@ -7,6 +7,20 @@
   <updated>2026-11-10T12:00:00Z</updated>
   <author><name>SACRVM</name></author>
   <entry>
+    <title>Voxcade 0.4.2: free, and open</title>
+    <link href="https://voxca.de/blog/0.4.2.html"/>
+    <id>https://voxca.de/blog/0.4.2.html</id>
+    <updated>2026-11-10T12:00:00Z</updated>
+    <summary>Voxcade is free under the zlib licence, its source is open on GitHub, and this is the first version the launcher fetches by itself.</summary>
+    <content type="html">&lt;p&gt;Two decisions, one small version.&lt;/p&gt;
+&lt;h2&gt;Free, as LÖVE is&lt;/h2&gt;
+&lt;p&gt;Voxcade is now under the &lt;a href=&quot;https://voxca.de/license.txt&quot;&gt;zlib licence&lt;/a&gt;: use it for free, make games with it, give them away or sell them. A game you make with Voxcade is yours alone. The same goes for the five games that come with it and the templates: learn from them, build on them. &lt;code&gt;LICENSE.txt&lt;/code&gt; and &lt;code&gt;NOTICE.txt&lt;/code&gt; are in the package from this version on.&lt;/p&gt;
+&lt;h2&gt;The source is open&lt;/h2&gt;
+&lt;p&gt;The engine, the games, the IDE and the tools are on GitHub: &lt;a href=&quot;https://github.com/SACRVM/voxcade&quot;&gt;github.com/SACRVM/voxcade&lt;/a&gt;. Pull requests are welcome; &lt;code&gt;CONTRIBUTING.md&lt;/code&gt; there says what to check before sending one. Found a bug? An issue there reaches us, and a replay of the run (F9 in the game) helps most.&lt;/p&gt;
+&lt;h2&gt;Getting it&lt;/h2&gt;
+&lt;p&gt;Coming from 0.4.1, start Voxcade: the launcher says that 0.4.2 is there, and UPDATE NOW fetches it, checks it and puts it in place. Your games, settings and saves stay. New here? &lt;a href=&quot;https://voxca.de/#download&quot;&gt;Download it&lt;/a&gt; and follow &lt;a href=&quot;https://voxca.de/install.html&quot;&gt;how to install&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
     <title>Voxcade 0.4.1, the first release</title>
     <link href="https://voxca.de/blog/0.4.1.html"/>
     <id>https://voxca.de/blog/0.4.1.html</id>

@@ -7,6 +7,20 @@
   <updated>2026-11-10T12:00:00Z</updated>
   <author><name>SACRVM</name></author>
   <entry>
+    <title>Voxcade 0.4.2: frei und offen</title>
+    <link href="https://voxca.de/de/blog/0.4.2.html"/>
+    <id>https://voxca.de/de/blog/0.4.2.html</id>
+    <updated>2026-11-10T12:00:00Z</updated>
+    <summary>Voxcade ist frei unter der zlib-Lizenz, der Quellcode liegt offen auf GitHub, und dies ist die erste Version, die der Launcher von selbst holt.</summary>
+    <content type="html">&lt;p&gt;Zwei Entscheidungen, eine kleine Version.&lt;/p&gt;
+&lt;h2&gt;Frei, wie LÖVE&lt;/h2&gt;
+&lt;p&gt;Voxcade steht jetzt unter der &lt;a href=&quot;https://voxca.de/license.txt&quot;&gt;zlib-Lizenz&lt;/a&gt; (englisch): Nutz es kostenlos, mach Spiele damit, verschenk oder verkauf sie. Ein Spiel, das du mit Voxcade machst, gehört dir allein. Dasselbe gilt für die fünf mitgelieferten Spiele und die Vorlagen: Lern aus ihnen, bau darauf auf. &lt;code&gt;LICENSE.txt&lt;/code&gt; und &lt;code&gt;NOTICE.txt&lt;/code&gt; liegen ab dieser Version im Paket.&lt;/p&gt;
+&lt;h2&gt;Der Quellcode ist offen&lt;/h2&gt;
+&lt;p&gt;Die Engine, die Spiele, die IDE und die Werkzeuge liegen auf GitHub: &lt;a href=&quot;https://github.com/SACRVM/voxcade&quot;&gt;github.com/SACRVM/voxcade&lt;/a&gt;. Pull Requests sind willkommen; &lt;code&gt;CONTRIBUTING.md&lt;/code&gt; dort sagt, was vorher zu prüfen ist. Einen Fehler gefunden? Ein Issue dort erreicht uns, und ein Replay des Laufs (F9 im Spiel) hilft am meisten.&lt;/p&gt;
+&lt;h2&gt;So bekommst du sie&lt;/h2&gt;
+&lt;p&gt;Kommst du von 0.4.1, starte Voxcade: Der Launcher meldet, dass es 0.4.2 gibt, und UPDATE NOW holt sie, prüft sie und setzt sie ein. Deine Spiele, Einstellungen und Spielstände bleiben. Neu hier? &lt;a href=&quot;https://voxca.de/de/#download&quot;&gt;Lad es herunter&lt;/a&gt; und folg der &lt;a href=&quot;https://voxca.de/de/install.html&quot;&gt;Anleitung&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
+  <entry>
     <title>Voxcade 0.4.1, die erste Version</title>
     <link href="https://voxca.de/de/blog/0.4.1.html"/>
     <id>https://voxca.de/de/blog/0.4.1.html</id>

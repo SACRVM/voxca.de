@@ -22,13 +22,12 @@ any key it lacks; the language links and `hreflang` follow by themselves.
 
 ## A release and the blog
 
-The downloads are this repository's releases (it is public; the engine's
-repository is not). A new version, once the engine's Builds workflow has
-made its release (a `v*` tag there):
+The downloads are the releases of the engine's repository
+(SACRVM/voxcade, public; its Builds workflow makes one for every `v*` tag).
+A new version, once that release is there:
 
 ```bash
-gh release download vX.Y.Z --repo SACRVM/voxcade --dir /tmp/vX.Y.Z
-gh release create vX.Y.Z /tmp/vX.Y.Z/* --repo SACRVM/voxca.de --title "Voxcade X.Y.Z" --notes "What is new: https://voxca.de/blog/X.Y.Z.html"
+gh release download vX.Y.Z --repo SACRVM/voxcade --dir /tmp/vX.Y.Z && sha256sum /tmp/vX.Y.Z/*
 ```
 
 Then `release.toml` (version, date, the files' addresses, sizes in MB

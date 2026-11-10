@@ -1,4 +1,3 @@
-Voxcade
 Copyright (c) 2026 Marcus Wilhelm (SACRVM)
 
 This software is provided 'as-is', without any express or implied
@@ -18,10 +17,10 @@ freely, subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 
 
-What this covers
-----------------
+Voxcade: what its licence covers
+================================
 
-The licence above (the zlib licence, as LÖVE has it) covers the Voxcade
+The licence in LICENSE.txt (the zlib licence, as LÖVE has it) covers the Voxcade
 program, the games that come with it (More Blood, Voxkeep, Sokovox,
 Pulsar, BunnyFarm: their code, figures, levels, sounds and songs) and
 the templates new games begin from. In short: use it for free, make

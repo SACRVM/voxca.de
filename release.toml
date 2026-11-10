@@ -1,21 +1,21 @@
 # The release the site offers: {{release.*}} in every page (tools/bake.py),
 # the date and sizes in each language's words. A new release: its files on
-# the voxca.de repo's releases (README.md), its post in posts/, then these.
+# the engine repo's releases (README.md), its post in posts/, then these.
 # The program reads this file too, to know of a new version
 # (https://voxca.de/release.toml): its package is taken only with the
 # sha256 here.
-version = "0.4.1"
+version = "0.4.2"
 date = "2026-11-10"
-post = "0.4.1"          # posts/0.4.1/: what is new
+post = "0.4.2"          # posts/0.4.2/: what is new
 
 [windows]
-url = "https://github.com/SACRVM/voxca.de/releases/download/v0.4.1/voxcade-0.4.1-windows-x86_64.zip"
-file = "voxcade-0.4.1-windows-x86_64.zip"
+url = "https://github.com/SACRVM/voxcade/releases/download/v0.4.2/voxcade-0.4.2-windows-x86_64.zip"
+file = "voxcade-0.4.2-windows-x86_64.zip"
 mb = 18.2
-sha256 = "6c270b1f0e6ba6937336272ef185b37a0e75151e9e9e268d6d0c4c4fce289bdc"
+sha256 = "917674a3219caa667c961301132327348b06ebae6d25f5d3701b8521bc163d4f"
 
 [linux]
-url = "https://github.com/SACRVM/voxca.de/releases/download/v0.4.1/voxcade-0.4.1-linux-x86_64.tar.gz"
-file = "voxcade-0.4.1-linux-x86_64.tar.gz"
+url = "https://github.com/SACRVM/voxcade/releases/download/v0.4.2/voxcade-0.4.2-linux-x86_64.tar.gz"
+file = "voxcade-0.4.2-linux-x86_64.tar.gz"
 mb = 21.3
-sha256 = "179535758dd9ae680e8c962863ce661395c1f936a1f2b3efbb51eab5e87ee3e0"
+sha256 = "42c5a81a7c1bd7029d19efe9305eb7a880df7f5e5fc0bbe51f27da6940cdad22"

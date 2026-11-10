@@ -30,6 +30,7 @@ together = "Together"
 inside = "Inside"
 download = "Download"
 blog = "Blog"
+support = "Support"
 label = "Sections"
 
 [hero]
@@ -113,6 +114,16 @@ native_title = "Native and fast"
 native_text = "Rust, wgpu and SDL3 on Vulkan, DirectX 12 or Metal. Smooth on older machines too, with quality levels for the rest."
 lua_title = "Lua or Rust"
 lua_text = "Games are Lua in a safe, deterministic sandbox, in the spirit of LÖVE; a game can also be written in Rust on the engine alone."
+
+[support]
+title = "Support Voxcade"
+lead = "Voxcade is free and stays free: no price, no ads, no tracking, and what you make with it is yours."
+text = "It is made by one person, in the open. If Voxcade is useful to you, or you would like to see where it goes, you can help carry it: a sponsorship pays for the time, the servers that bring players together, and the next genres."
+button = "Become a sponsor"
+how = "Through GitHub Sponsors: once or monthly, from any amount, to end whenever you like."
+other_game = "Make a game and show it: nothing helps more than games."
+other_bug = "Tell us what broke or confused you, in an <a href=\"https://github.com/SACRVM/voxcade/issues\">issue</a>."
+other_star = "Give the <a href=\"https://github.com/SACRVM/voxcade\">repository</a> a star, and tell a friend."
 
 [next]
 title = "What's next"

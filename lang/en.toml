@@ -46,7 +46,7 @@ menu_together = "Play together"
 
 [games]
 title = "Games"
-lead = "Five games come with the engine, each a folder of Lua and voxels, each a different genre; a sixth, the Arena, is a yard to blow apart."
+lead = "Five games come with the engine, each a folder of Lua and voxels, each a different genre."
 moreblood_genre = "Run-and-gun shooter"
 moreblood_text = "Fight through the desert, free the hostages and bring down the gunship. Huts, watchtowers and the ground itself burst into voxels."
 voxkeep_genre = "Jump & run"
@@ -62,7 +62,7 @@ shot = "Screenshot of"
 [download]
 where = "For PCs with Windows or Linux, not phones or tablets; macOS comes later."
 title = "Download"
-lead = "Version {{release.version}} of {{release.date}}: six games, and the IDE, the workshop where you make your own, in one folder. Nothing to install: unpack it and start Voxcade with a double click."
+lead = "Version {{release.version}} of {{release.date}}: five games, and the IDE, the workshop where you make your own, in one folder. Nothing to install: unpack it and start Voxcade with a double click."
 windows_needs = "A PC with Windows 10 or 11 (64-bit). Its graphics must know DirectX 12 or Vulkan, as most since about 2015 do."
 windows_button = "Download for Windows"
 linux_needs = "A PC with a current Linux (64-bit): Ubuntu 24.04, Linux Mint 22, Fedora 40, Debian 13 or newer, with Vulkan graphics drivers."
@@ -158,7 +158,7 @@ text = "There is no page here."
 home = "Back to the start"
 
 [install]
-launcher_alt = "The launcher: the six games, each with PLAY and EDIT, and NEW GAME below."
+launcher_alt = "The launcher: the five games, each with PLAY and EDIT, and NEW GAME below."
 linux_silent = "If nothing appears, start it from a terminal as above: it says what is wrong. <code>GLIBC_2.39 not found</code> means the system is too old (Ubuntu 24.04, Linux Mint 22 and newer work); the first line of this shows the version:"
 win_unblock = "Fewer warnings later: before unpacking, right-click the zip file, choose <em>Properties</em>, tick <em>Unblock</em> at the bottom and press <em>OK</em>."
 win_browser = "If the browser says the file is not commonly downloaded, keep it: in Edge, the three dots beside it, <em>Keep</em>, <em>Show more</em>, <em>Keep anyway</em>."
@@ -216,7 +216,7 @@ share_title = "Pass it on"
 share_text = "BUILD packs the program and your game into one zip file in the game's <code>builds</code> folder, ready to give to a friend."
 next_title = "Where next"
 next_help = "HELP in the IDE shows the Lua API by example: whole games to copy and change."
-next_games = "The six games lie in the <code>games</code> folder beside the program: EDIT in the launcher opens one, to see how it is made."
+next_games = "The five games lie in the <code>games</code> folder beside the program: EDIT in the launcher opens one, to see how it is made."
 next_console = "While a game plays, the key left of 1 opens the console: a line of Lua runs in the game, <code>player.state.score = 5000</code> for instance."
 
 [blog]

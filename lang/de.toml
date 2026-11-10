@@ -45,7 +45,7 @@ menu_together = "Zusammen spielen"
 
 [games]
 title = "Spiele"
-lead = "Fünf Spiele kommen mit der Engine, jedes ein Ordner aus Lua und Voxeln, jedes ein anderes Genre; ein sechstes, die Arena, ist ein Hof zum Zerlegen."
+lead = "Fünf Spiele kommen mit der Engine, jedes ein Ordner aus Lua und Voxeln, jedes ein anderes Genre."
 moreblood_genre = "Run-and-Gun-Shooter"
 moreblood_text = "Kämpf dich durch die Wüste, befrei die Geiseln und hol den Kampfhubschrauber vom Himmel. Hütten, Wachtürme und der Boden selbst zerfallen in Voxel."
 voxkeep_genre = "Jump &amp; Run"
@@ -61,7 +61,7 @@ shot = "Bild aus"
 [download]
 where = "Für PCs mit Windows oder Linux, nicht für Handys oder Tablets; macOS kommt später."
 title = "Download"
-lead = "Version {{release.version}} vom {{release.date}}: sechs Spiele und die IDE, die Werkstatt für eigene Spiele, in einem Ordner. Nichts zu installieren: entpacken und Voxcade per Doppelklick starten."
+lead = "Version {{release.version}} vom {{release.date}}: fünf Spiele und die IDE, die Werkstatt für eigene Spiele, in einem Ordner. Nichts zu installieren: entpacken und Voxcade per Doppelklick starten."
 windows_needs = "Ein PC mit Windows 10 oder 11 (64 Bit). Seine Grafik muss DirectX 12 oder Vulkan können, wie die meisten seit etwa 2015."
 windows_button = "Für Windows herunterladen"
 linux_needs = "Ein PC mit aktuellem Linux (64 Bit): Ubuntu 24.04, Linux Mint 22, Fedora 40, Debian 13 oder neuer, mit Vulkan-Grafiktreibern."
@@ -157,7 +157,7 @@ text = "Hier gibt es keine Seite."
 home = "Zurück zum Anfang"
 
 [install]
-launcher_alt = "Der Launcher: die sechs Spiele, jedes mit PLAY und EDIT, darunter NEW GAME."
+launcher_alt = "Der Launcher: die fünf Spiele, jedes mit PLAY und EDIT, darunter NEW GAME."
 linux_silent = "Erscheint nichts, starte es wie oben aus einem Terminal: Dort steht, was fehlt. <code>GLIBC_2.39 not found</code> heißt, das System ist zu alt (Ubuntu 24.04, Linux Mint 22 und neuer gehen); die erste Zeile hiervon zeigt die Version:"
 win_unblock = "Weniger Warnungen später: Klick vor dem Entpacken mit der rechten Maustaste auf die Zip-Datei, wähle <em>Eigenschaften</em>, setz unten den Haken bei <em>Zulassen</em> und drück <em>OK</em>."
 win_browser = "Meldet der Browser, die Datei werde selten heruntergeladen, behalte sie: in Edge die drei Punkte daneben, <em>Beibehalten</em>, <em>Mehr anzeigen</em>, <em>Trotzdem beibehalten</em>."
@@ -215,7 +215,7 @@ share_title = "Weitergeben"
 share_text = "BUILD packt das Programm und dein Spiel in eine Zip-Datei im Ordner <code>builds</code> des Spiels, fertig zum Weitergeben."
 next_title = "Wie es weitergeht"
 next_help = "HELP in der IDE zeigt die Lua-API an Beispielen: ganze Spiele zum Kopieren und Ändern."
-next_games = "Die sechs Spiele liegen im Ordner <code>games</code> neben dem Programm: EDIT im Launcher öffnet eins, um zu sehen, wie es gemacht ist."
+next_games = "Die fünf Spiele liegen im Ordner <code>games</code> neben dem Programm: EDIT im Launcher öffnet eins, um zu sehen, wie es gemacht ist."
 next_console = "Während ein Spiel läuft, öffnet die Taste links neben der 1 die Konsole: Eine Zeile Lua läuft im Spiel, zum Beispiel <code>player.state.score = 5000</code>."
 
 [blog]

@@ -60,7 +60,7 @@ shot = "Bild aus"
 
 [download]
 where = "Für PCs mit Windows oder Linux, nicht für Handys oder Tablets; macOS kommt später."
-free = "Voxcade ist frei, unter der <a href=\"/license.txt\">zlib-Lizenz</a> (englisch), wie LÖVE: Nutz es, mach Spiele damit, verschenk oder verkauf sie. Ein Spiel, das du machst, gehört dir. Der Quellcode ist offen: <a href=\"https://github.com/SACRVM/voxcade\">github.com/SACRVM/voxcade</a>."
+free = "Voxcade ist frei, unter der <a href=\"/license.txt\">zlib-Lizenz</a> (englisch), wie LÖVE: Nutz es, mach Spiele damit, verschenk oder verkauf sie. Ein Spiel, das du machst, gehört dir. Der Quellcode ist offen: <a href=\"https://github.com/SACRVM/voxcade\">github.com/SACRVM/voxcade</a>. Wenn es dir gefällt, kannst du <a href=\"https://github.com/sponsors/SACRVM\">die Entwicklung unterstützen</a>."
 title = "Download"
 lead = "Version {{release.version}} vom {{release.date}}: fünf Spiele und die IDE, die Werkstatt für eigene Spiele, in einem Ordner. Nichts zu installieren: entpacken und Voxcade per Doppelklick starten."
 windows_needs = "Ein PC mit Windows 10 oder 11 (64 Bit). Seine Grafik muss DirectX 12 oder Vulkan können, wie die meisten seit etwa 2015."
@@ -121,6 +121,7 @@ genres = "Fertige Regeln für weitere Genres: Rollenspiele, Adventures, Strategi
 follow = "Neuigkeiten kommen im <a href=\"{{home}}blog/\">Blog</a>, mit einem Feed für deinen Reader, und auf <a href=\"https://sacrvm.dev/blog/\">sacrvm.dev</a>."
 
 [footer]
+support = "Voxcade unterstützen"
 made = "Voxcade wird von <a href=\"https://sacrvm.dev/\">SACRVM</a> gemacht, frei und <a href=\"https://github.com/SACRVM/voxcade\">quelloffen</a>."
 cookies = "Keine Cookies, kein Tracking."
 legal = "Impressum &amp; Datenschutz"

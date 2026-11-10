@@ -5,9 +5,9 @@ summary: Voxcade ist frei unter der zlib-Lizenz, der Quellcode liegt offen auf G
 ---
 Zwei Entscheidungen, eine kleine Version.
 
-## Frei, wie LÖVE
+## Frei nutzbar
 
-Voxcade steht jetzt unter der [zlib-Lizenz](/license.txt) (englisch): Nutz es kostenlos, mach Spiele damit, verschenk oder verkauf sie. Ein Spiel, das du mit Voxcade machst, gehört dir allein. Dasselbe gilt für die fünf mitgelieferten Spiele und die Vorlagen: Lern aus ihnen, bau darauf auf. `LICENSE.txt` und `NOTICE.txt` liegen ab dieser Version im Paket.
+Voxcade steht jetzt unter der [zlib-Lizenz](/license.txt) (englisch), derselben wie LÖVE, unserem Vorbild: Nutz es kostenlos, mach Spiele damit, verschenk oder verkauf sie. Ein Spiel, das du mit Voxcade machst, gehört dir allein. Dasselbe gilt für die fünf mitgelieferten Spiele und die Vorlagen: Lern aus ihnen, bau darauf auf. `LICENSE.txt` und `NOTICE.txt` liegen ab dieser Version im Paket.
 
 ## Der Quellcode ist offen
 

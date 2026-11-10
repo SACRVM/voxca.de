@@ -13,8 +13,8 @@
     <updated>2026-11-10T12:00:00Z</updated>
     <summary>Voxcade ist frei unter der zlib-Lizenz, der Quellcode liegt offen auf GitHub, und dies ist die erste Version, die der Launcher von selbst holt.</summary>
     <content type="html">&lt;p&gt;Zwei Entscheidungen, eine kleine Version.&lt;/p&gt;
-&lt;h2&gt;Frei, wie LÖVE&lt;/h2&gt;
-&lt;p&gt;Voxcade steht jetzt unter der &lt;a href=&quot;https://voxca.de/license.txt&quot;&gt;zlib-Lizenz&lt;/a&gt; (englisch): Nutz es kostenlos, mach Spiele damit, verschenk oder verkauf sie. Ein Spiel, das du mit Voxcade machst, gehört dir allein. Dasselbe gilt für die fünf mitgelieferten Spiele und die Vorlagen: Lern aus ihnen, bau darauf auf. &lt;code&gt;LICENSE.txt&lt;/code&gt; und &lt;code&gt;NOTICE.txt&lt;/code&gt; liegen ab dieser Version im Paket.&lt;/p&gt;
+&lt;h2&gt;Frei nutzbar&lt;/h2&gt;
+&lt;p&gt;Voxcade steht jetzt unter der &lt;a href=&quot;https://voxca.de/license.txt&quot;&gt;zlib-Lizenz&lt;/a&gt; (englisch), derselben wie LÖVE, unserem Vorbild: Nutz es kostenlos, mach Spiele damit, verschenk oder verkauf sie. Ein Spiel, das du mit Voxcade machst, gehört dir allein. Dasselbe gilt für die fünf mitgelieferten Spiele und die Vorlagen: Lern aus ihnen, bau darauf auf. &lt;code&gt;LICENSE.txt&lt;/code&gt; und &lt;code&gt;NOTICE.txt&lt;/code&gt; liegen ab dieser Version im Paket.&lt;/p&gt;
 &lt;h2&gt;Der Quellcode ist offen&lt;/h2&gt;
 &lt;p&gt;Die Engine, die Spiele, die IDE und die Werkzeuge liegen auf GitHub: &lt;a href=&quot;https://github.com/SACRVM/voxcade&quot;&gt;github.com/SACRVM/voxcade&lt;/a&gt;. Pull Requests sind willkommen; &lt;code&gt;CONTRIBUTING.md&lt;/code&gt; dort sagt, was vorher zu prüfen ist. Einen Fehler gefunden? Ein Issue dort erreicht uns, und ein Replay des Laufs (F9 im Spiel) hilft am meisten.&lt;/p&gt;
 &lt;h2&gt;So bekommst du sie&lt;/h2&gt;

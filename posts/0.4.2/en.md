@@ -5,9 +5,9 @@ summary: Voxcade is free under the zlib licence, its source is open on GitHub, a
 ---
 Two decisions, one small version.
 
-## Free, as LÖVE is
+## Free to use
 
-Voxcade is now under the [zlib licence](/license.txt): use it for free, make games with it, give them away or sell them. A game you make with Voxcade is yours alone. The same goes for the five games that come with it and the templates: learn from them, build on them. `LICENSE.txt` and `NOTICE.txt` are in the package from this version on.
+Voxcade is now under the [zlib licence](/license.txt), the one LÖVE has, which showed us the way: use it for free, make games with it, give them away or sell them. A game you make with Voxcade is yours alone. The same goes for the five games that come with it and the templates: learn from them, build on them. `LICENSE.txt` and `NOTICE.txt` are in the package from this version on.
 
 ## The source is open
 

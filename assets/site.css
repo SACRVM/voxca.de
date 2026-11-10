@@ -193,7 +193,7 @@ pre .o { color: var(--muted); }
 .button:hover, .button:focus-visible { background: var(--red); color: var(--cream); outline: none; }
 .button:focus-visible { box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px var(--cream); }
 .download-file { font-size: 14px; color: var(--muted); margin: 10px 0 0; overflow-wrap: anywhere; }
-.next-steps { list-style: none; padding: 0; margin: 32px 0 0; display: flex; flex-wrap: wrap; gap: 12px 36px; }
+.next-steps { list-style: none; padding: 0; margin: 32px 0 0; display: flex; flex-direction: column; gap: 12px; }
 .next-steps a, .more a { font: 20px/1.4 var(--pixel); text-transform: uppercase; color: var(--cream); text-decoration: none; }
 .next-steps a::before, .more a::before { content: "> "; color: var(--orange); }
 .next-steps a:hover, .more a:hover { color: var(--red); }

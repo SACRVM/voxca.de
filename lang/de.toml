@@ -195,6 +195,7 @@ trouble_title = "Wenn es nicht startet"
 trouble_text = "Liegt es an der Grafik, sagt Voxcade das in einem Fenster: Bring den Grafiktreiber auf den neuesten Stand. Läuft ein Spiel langsam, hilft EINSTELLUNGEN, BILD, SCHATTEN niedriger. Erscheint unter Linux gar nichts, starte es aus einem Terminal wie in Schritt 3."
 
 [quick]
+play_caption = "Dein neues Spiel: Die Vorlage JUMP &amp; RUN ist ein Burgraum mit Held, Schleim, Fledermaus und Edelsteinen, zum Verändern."
 title = "Schnellstart · Voxcade"
 description = "Dein erstes Spiel mit Voxcade in fünf Minuten: ein Jump and Run aus einer Vorlage, gespielt und verändert, während es läuft."
 heading = "Dein erstes Spiel in fünf Minuten"

@@ -32,6 +32,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://voxca.de/blog/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://voxca.de/de/blog/"/>
   </url>
+  <url><loc>https://voxca.de/blog/0.5.0.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voxca.de/blog/0.5.0.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://voxca.de/de/blog/0.5.0.html"/>
+  </url>
+  <url><loc>https://voxca.de/de/blog/0.5.0.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://voxca.de/blog/0.5.0.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://voxca.de/de/blog/0.5.0.html"/>
+  </url>
   <url><loc>https://voxca.de/blog/0.4.2.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://voxca.de/blog/0.4.2.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://voxca.de/de/blog/0.4.2.html"/>

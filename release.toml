@@ -4,18 +4,18 @@
 # The program reads this file too, to know of a new version
 # (https://voxca.de/release.toml): its package is taken only with the
 # sha256 here.
-version = "0.4.2"
-date = "2026-11-10"
-post = "0.4.2"          # posts/0.4.2/: what is new
+version = "0.5.0"
+date = "2026-11-11"
+post = "0.5.0"          # posts/0.5.0/: what is new
 
 [windows]
-url = "https://github.com/SACRVM/voxcade/releases/download/v0.4.2/voxcade-0.4.2-windows-x86_64.zip"
-file = "voxcade-0.4.2-windows-x86_64.zip"
-mb = 18.2
-sha256 = "917674a3219caa667c961301132327348b06ebae6d25f5d3701b8521bc163d4f"
+url = "https://github.com/SACRVM/voxcade/releases/download/v0.5.0/voxcade-0.5.0-windows-x86_64.zip"
+file = "voxcade-0.5.0-windows-x86_64.zip"
+mb = 18.8
+sha256 = "c2d72d6a8828e959494a27f473eb97129799c5a2b60f15c105ebff519f6e8567"
 
 [linux]
-url = "https://github.com/SACRVM/voxcade/releases/download/v0.4.2/voxcade-0.4.2-linux-x86_64.tar.gz"
-file = "voxcade-0.4.2-linux-x86_64.tar.gz"
-mb = 21.3
-sha256 = "42c5a81a7c1bd7029d19efe9305eb7a880df7f5e5fc0bbe51f27da6940cdad22"
+url = "https://github.com/SACRVM/voxcade/releases/download/v0.5.0/voxcade-0.5.0-linux-x86_64.tar.gz"
+file = "voxcade-0.5.0-linux-x86_64.tar.gz"
+mb = 21.8
+sha256 = "add3e5374944f7c468ced4afd22a7511762339036bb633098e02de69f0b8be59"

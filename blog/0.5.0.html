@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voxcade 0.5.0: sounds you roll, files you rename · Voxcade</title>
+<meta name="description" content="Sounds are files of your game now, with a sound maker in the IDE that rolls a coin, a jump or a blast. Songs are text to change and hear. The IDE renames, deletes and keeps up with the folder.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#050509">
+<link rel="canonical" href="https://voxca.de/blog/0.5.0.html">
+<link rel="alternate" hreflang="en" href="https://voxca.de/blog/0.5.0.html">
+<link rel="alternate" hreflang="de" href="https://voxca.de/de/blog/0.5.0.html">
+<link rel="alternate" hreflang="x-default" href="https://voxca.de/blog/0.5.0.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Voxcade">
+<meta property="og:title" content="Voxcade 0.5.0: sounds you roll, files you rename · Voxcade">
+<meta property="og:description" content="Sounds are files of your game now, with a sound maker in the IDE that rolls a coin, a jump or a blast. Songs are text to change and hear. The IDE renames, deletes and keeps up with the folder.">
+<meta property="og:url" content="https://voxca.de/blog/0.5.0.html">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://voxca.de/assets/img/og.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="preload" href="/assets/fonts/voxcade-pixel.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="alternate" type="application/atom+xml" href="/blog/feed.xml" title="Voxcade · Blog">
+</head>
+<body>
+<a class="skip" href="#content">Skip to the content</a>
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="/">VOXCADE</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="/#games">Games</a>
+      <a href="/#make">Make</a>
+      <a href="/#together">Together</a>
+      <a class="keep" href="/#download">Download</a>
+      <a class="keep" href="/blog/">Blog</a>
+      <a class="nav-support" href="/#support">Support</a>
+    </nav>
+    <nav class="langs" aria-label="Language"><a href="/blog/0.5.0.html" hreflang="en" lang="en" aria-current="true" title="English">EN</a> <a href="/de/blog/0.5.0.html" hreflang="de" lang="de" title="Deutsch">DE</a></nav>
+  </div>
+</header>
+
+<main id="content" class="section page">
+  <article class="wrap post">
+    <p class="post-date"><a href="/blog/">Blog</a> · <time datetime="2026-11-11">11 November 2026</time></p>
+    <h1>Voxcade 0.5.0: sounds you roll, files you rename</h1>
+    <p class="lead">Sounds are files of your game now, with a sound maker in the IDE that rolls a coin, a jump or a blast. Songs are text to change and hear. The IDE renames, deletes and keeps up with the folder.</p>
+<p>This version is about the IDE: more of a game is made without leaving it.</p>
+<h2>Sounds are files</h2>
+<p>A sound is a file of your game now, <code>sounds/NAME.toml</code>: a few numbers, a line each, only what differs. Or a recording, <code>sounds/NAME.wav</code>. Its name is the file's name. The sounds the engine brings stand in the list too, marked "built in"; MAKE IT YOURS copies one into your game to change.</p>
+<p>Coming from an older version with sounds in <code>conf.lua</code> (<code>c.sounds</code>)? <code>voxcade sounds GAME --to-files</code> writes them as files once.</p>
+<h2>The sound maker</h2>
+<p>Open a sound in the IDE and a row of buttons stands over its text: COIN, JUMP, SHOT, BLAST, HIT, POWER UP, BLIP. Each rolls a fresh sound of its sort and plays it; press again for another. Five faders (PITCH, LENGTH, SLIDE, BRIGHT, PUNCH) shape it, UNDO steps back, LOOP plays it again and again while you change it. All of it only writes the text, so what you see is what the game plays. Under the text, USED lists the lines of your game that name the sound.</p>
+<h2>Songs, too</h2>
+<p>A song (<code>.mml</code>) is text you change in the IDE, checked while you type; PLAY SONG plays it as it stands.</p>
+<h2>The IDE keeps house</h2>
+<ul class="points"><li><strong>RENAME and DELETE</strong> with a right click on a file. A rename offers to change the lines of your game that name the file. DELETE goes to the system's trash, with UNDO in the bar.</li><li><strong>A plus in each heading</strong> of the list makes a new file of that sort: a Lua file, a scenario, a model, a sound, a song.</li><li><strong>The list follows the folder:</strong> what an agent or another program makes appears by itself.</li><li><strong>The game's keys</strong> stand under the game while it plays, as your keyboard names them. AGAIN begins it anew; BACK TO THE GAME returns to a game waiting behind a file.</li><li><strong>What is wrong with the game</strong> is one red line over the main area, with TO THE LINE.</li><li><strong>BUILD</strong> works in the background and puts the package into your game's own <code>builds/</code> folder.</li><li><strong>NEW</strong> makes every game a git repository with its first commit, where git is installed.</li><li><strong>No agent installed?</strong> The console says what an agent is and where to get one, for example Claude Code. Everything else works without.</li></ul>
+<h2>The picture</h2>
+<p>Water and glass made of see-through cubes draw as one body instead of a grid of stripes, and show how deep they are. Bent arms and legs of posed figures no longer flicker. A mastering limiter at the end of the sound keeps loud moments clean.</p>
+<h2>Getting it</h2>
+<p>Start Voxcade: the launcher says there is 0.5.0, and UPDATE NOW fetches it. Your games, settings and saves stay. New here? <a href="/#download">Download it</a> and follow the <a href="/install.html">guide</a>.</p>
+    <p class="back"><a href="/blog/">All posts</a></p>
+  </article>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p>Voxcade is made by <a href="https://sacrvm.dev/">SACRVM</a>, free and <a href="https://github.com/SACRVM/voxcade">open source</a>. No cookies, no tracking.</p>
+    <p class="foot-links">
+      <a href="https://github.com/sponsors/SACRVM">Support Voxcade</a>
+      <a href="/blog/">Blog</a>
+      <a href="/imprint.html">Imprint &amp; privacy</a>
+      <span class="langs"><a href="/blog/0.5.0.html" hreflang="en" lang="en" aria-current="true" title="English">EN</a> <a href="/de/blog/0.5.0.html" hreflang="de" lang="de" title="Deutsch">DE</a></span>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

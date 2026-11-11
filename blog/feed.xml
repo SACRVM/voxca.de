@@ -4,8 +4,29 @@
   <link href="https://voxca.de/blog/"/>
   <link rel="self" href="https://voxca.de/blog/feed.xml"/>
   <id>https://voxca.de/blog/</id>
-  <updated>2026-11-10T12:00:00Z</updated>
+  <updated>2026-11-11T12:00:00Z</updated>
   <author><name>SACRVM</name></author>
+  <entry>
+    <title>Voxcade 0.5.0: sounds you roll, files you rename</title>
+    <link href="https://voxca.de/blog/0.5.0.html"/>
+    <id>https://voxca.de/blog/0.5.0.html</id>
+    <updated>2026-11-11T12:00:00Z</updated>
+    <summary>Sounds are files of your game now, with a sound maker in the IDE that rolls a coin, a jump or a blast. Songs are text to change and hear. The IDE renames, deletes and keeps up with the folder.</summary>
+    <content type="html">&lt;p&gt;This version is about the IDE: more of a game is made without leaving it.&lt;/p&gt;
+&lt;h2&gt;Sounds are files&lt;/h2&gt;
+&lt;p&gt;A sound is a file of your game now, &lt;code&gt;sounds/NAME.toml&lt;/code&gt;: a few numbers, a line each, only what differs. Or a recording, &lt;code&gt;sounds/NAME.wav&lt;/code&gt;. Its name is the file&#x27;s name. The sounds the engine brings stand in the list too, marked &quot;built in&quot;; MAKE IT YOURS copies one into your game to change.&lt;/p&gt;
+&lt;p&gt;Coming from an older version with sounds in &lt;code&gt;conf.lua&lt;/code&gt; (&lt;code&gt;c.sounds&lt;/code&gt;)? &lt;code&gt;voxcade sounds GAME --to-files&lt;/code&gt; writes them as files once.&lt;/p&gt;
+&lt;h2&gt;The sound maker&lt;/h2&gt;
+&lt;p&gt;Open a sound in the IDE and a row of buttons stands over its text: COIN, JUMP, SHOT, BLAST, HIT, POWER UP, BLIP. Each rolls a fresh sound of its sort and plays it; press again for another. Five faders (PITCH, LENGTH, SLIDE, BRIGHT, PUNCH) shape it, UNDO steps back, LOOP plays it again and again while you change it. All of it only writes the text, so what you see is what the game plays. Under the text, USED lists the lines of your game that name the sound.&lt;/p&gt;
+&lt;h2&gt;Songs, too&lt;/h2&gt;
+&lt;p&gt;A song (&lt;code&gt;.mml&lt;/code&gt;) is text you change in the IDE, checked while you type; PLAY SONG plays it as it stands.&lt;/p&gt;
+&lt;h2&gt;The IDE keeps house&lt;/h2&gt;
+&lt;ul class=&quot;points&quot;&gt;&lt;li&gt;&lt;strong&gt;RENAME and DELETE&lt;/strong&gt; with a right click on a file. A rename offers to change the lines of your game that name the file. DELETE goes to the system&#x27;s trash, with UNDO in the bar.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;A plus in each heading&lt;/strong&gt; of the list makes a new file of that sort: a Lua file, a scenario, a model, a sound, a song.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;The list follows the folder:&lt;/strong&gt; what an agent or another program makes appears by itself.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;The game&#x27;s keys&lt;/strong&gt; stand under the game while it plays, as your keyboard names them. AGAIN begins it anew; BACK TO THE GAME returns to a game waiting behind a file.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;What is wrong with the game&lt;/strong&gt; is one red line over the main area, with TO THE LINE.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;BUILD&lt;/strong&gt; works in the background and puts the package into your game&#x27;s own &lt;code&gt;builds/&lt;/code&gt; folder.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;NEW&lt;/strong&gt; makes every game a git repository with its first commit, where git is installed.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;No agent installed?&lt;/strong&gt; The console says what an agent is and where to get one, for example Claude Code. Everything else works without.&lt;/li&gt;&lt;/ul&gt;
+&lt;h2&gt;The picture&lt;/h2&gt;
+&lt;p&gt;Water and glass made of see-through cubes draw as one body instead of a grid of stripes, and show how deep they are. Bent arms and legs of posed figures no longer flicker. A mastering limiter at the end of the sound keeps loud moments clean.&lt;/p&gt;
+&lt;h2&gt;Getting it&lt;/h2&gt;
+&lt;p&gt;Start Voxcade: the launcher says there is 0.5.0, and UPDATE NOW fetches it. Your games, settings and saves stay. New here? &lt;a href=&quot;https://voxca.de/#download&quot;&gt;Download it&lt;/a&gt; and follow the &lt;a href=&quot;https://voxca.de/install.html&quot;&gt;guide&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Voxcade 0.4.2: free, and open</title>
     <link href="https://voxca.de/blog/0.4.2.html"/>

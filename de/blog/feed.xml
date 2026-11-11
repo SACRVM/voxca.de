@@ -4,8 +4,29 @@
   <link href="https://voxca.de/de/blog/"/>
   <link rel="self" href="https://voxca.de/de/blog/feed.xml"/>
   <id>https://voxca.de/de/blog/</id>
-  <updated>2026-11-10T12:00:00Z</updated>
+  <updated>2026-11-11T12:00:00Z</updated>
   <author><name>SACRVM</name></author>
+  <entry>
+    <title>Voxcade 0.5.0: Geräusche würfeln, Dateien umbenennen</title>
+    <link href="https://voxca.de/de/blog/0.5.0.html"/>
+    <id>https://voxca.de/de/blog/0.5.0.html</id>
+    <updated>2026-11-11T12:00:00Z</updated>
+    <summary>Geräusche sind jetzt Dateien deines Spiels, und ein Geräuschmacher in der IDE würfelt eine Münze, einen Sprung oder einen Knall. Songs sind Text zum Ändern und Anhören. Die IDE benennt um, löscht und folgt dem Ordner.</summary>
+    <content type="html">&lt;p&gt;In dieser Version geht es um die IDE: Mehr von einem Spiel entsteht, ohne sie zu verlassen.&lt;/p&gt;
+&lt;h2&gt;Geräusche sind Dateien&lt;/h2&gt;
+&lt;p&gt;Ein Geräusch ist jetzt eine Datei deines Spiels, &lt;code&gt;sounds/NAME.toml&lt;/code&gt;: ein paar Zahlen, je eine Zeile, nur was abweicht. Oder eine Aufnahme, &lt;code&gt;sounds/NAME.wav&lt;/code&gt;. Sein Name ist der Dateiname. Die Geräusche, die die Engine mitbringt, stehen auch in der Liste, als „built in“ markiert; MAKE IT YOURS kopiert eins in dein Spiel, damit du es ändern kannst.&lt;/p&gt;
+&lt;p&gt;Kommst du von einer älteren Version mit Geräuschen in &lt;code&gt;conf.lua&lt;/code&gt; (&lt;code&gt;c.sounds&lt;/code&gt;)? &lt;code&gt;voxcade sounds SPIEL --to-files&lt;/code&gt; schreibt sie einmal als Dateien.&lt;/p&gt;
+&lt;h2&gt;Der Geräuschmacher&lt;/h2&gt;
+&lt;p&gt;Öffne ein Geräusch in der IDE, und über seinem Text steht eine Reihe Knöpfe: COIN, JUMP, SHOT, BLAST, HIT, POWER UP, BLIP. Jeder würfelt ein neues Geräusch seiner Sorte und spielt es; noch ein Druck würfelt das nächste. Fünf Regler (PITCH, LENGTH, SLIDE, BRIGHT, PUNCH) formen es, UNDO geht einen Schritt zurück, LOOP spielt es immer wieder, während du änderst. Alles schreibt nur den Text: Was du siehst, spielt das Spiel. Unter dem Text listet USED die Zeilen deines Spiels, die das Geräusch nennen.&lt;/p&gt;
+&lt;h2&gt;Songs auch&lt;/h2&gt;
+&lt;p&gt;Ein Song (&lt;code&gt;.mml&lt;/code&gt;) ist Text, den du in der IDE änderst und der beim Tippen geprüft wird; PLAY SONG spielt ihn, wie er dasteht.&lt;/p&gt;
+&lt;h2&gt;Die IDE hält Ordnung&lt;/h2&gt;
+&lt;ul class=&quot;points&quot;&gt;&lt;li&gt;&lt;strong&gt;RENAME und DELETE&lt;/strong&gt; mit einem Rechtsklick auf eine Datei. Beim Umbenennen bietet die IDE an, die Zeilen deines Spiels zu ändern, die die Datei nennen. DELETE legt in den Papierkorb des Systems, mit UNDO in der Leiste.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Ein Plus in jeder Überschrift&lt;/strong&gt; der Liste legt eine neue Datei der Sorte an: eine Lua-Datei, ein Szenario, ein Modell, ein Geräusch, einen Song.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Die Liste folgt dem Ordner:&lt;/strong&gt; Was ein Agent oder ein anderes Programm anlegt, erscheint von selbst.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Die Tasten des Spiels&lt;/strong&gt; stehen unter dem Spiel, solange es läuft, so wie deine Tastatur sie nennt. AGAIN beginnt es neu; BACK TO THE GAME führt zu einem Spiel zurück, das hinter einer Datei wartet.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Was am Spiel nicht stimmt,&lt;/strong&gt; steht als eine rote Zeile über dem Hauptbereich, mit TO THE LINE.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;BUILD&lt;/strong&gt; arbeitet im Hintergrund und legt das Paket in den Ordner &lt;code&gt;builds/&lt;/code&gt; deines Spiels.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;NEW&lt;/strong&gt; macht jedes Spiel zu einem Git-Repository mit erstem Commit, wo Git installiert ist.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Kein Agent installiert?&lt;/strong&gt; Die Konsole sagt, was ein Agent ist und wo es einen gibt, zum Beispiel Claude Code. Alles andere geht ohne.&lt;/li&gt;&lt;/ul&gt;
+&lt;h2&gt;Das Bild&lt;/h2&gt;
+&lt;p&gt;Wasser und Glas aus durchsichtigen Würfeln werden als ein Körper gezeichnet statt als Gitter aus Streifen und zeigen, wie tief sie sind. Gebeugte Arme und Beine von Figuren in Pose flimmern nicht mehr. Ein Mastering-Limiter am Ende des Tons hält laute Momente sauber.&lt;/p&gt;
+&lt;h2&gt;So bekommst du sie&lt;/h2&gt;
+&lt;p&gt;Starte Voxcade: Der Launcher meldet, dass es 0.5.0 gibt, und UPDATE NOW holt sie. Deine Spiele, Einstellungen und Spielstände bleiben. Neu hier? &lt;a href=&quot;https://voxca.de/de/#download&quot;&gt;Lad es herunter&lt;/a&gt; und folg der &lt;a href=&quot;https://voxca.de/de/install.html&quot;&gt;Anleitung&lt;/a&gt;.&lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>Voxcade 0.4.2: frei und offen</title>
     <link href="https://voxca.de/de/blog/0.4.2.html"/>

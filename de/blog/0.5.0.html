@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voxcade 0.5.0: Geräusche würfeln, Dateien umbenennen · Voxcade</title>
+<meta name="description" content="Geräusche sind jetzt Dateien deines Spiels, und ein Geräuschmacher in der IDE würfelt eine Münze, einen Sprung oder einen Knall. Songs sind Text zum Ändern und Anhören. Die IDE benennt um, löscht und folgt dem Ordner.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#050509">
+<link rel="canonical" href="https://voxca.de/de/blog/0.5.0.html">
+<link rel="alternate" hreflang="en" href="https://voxca.de/blog/0.5.0.html">
+<link rel="alternate" hreflang="de" href="https://voxca.de/de/blog/0.5.0.html">
+<link rel="alternate" hreflang="x-default" href="https://voxca.de/blog/0.5.0.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Voxcade">
+<meta property="og:title" content="Voxcade 0.5.0: Geräusche würfeln, Dateien umbenennen · Voxcade">
+<meta property="og:description" content="Geräusche sind jetzt Dateien deines Spiels, und ein Geräuschmacher in der IDE würfelt eine Münze, einen Sprung oder einen Knall. Songs sind Text zum Ändern und Anhören. Die IDE benennt um, löscht und folgt dem Ordner.">
+<meta property="og:url" content="https://voxca.de/de/blog/0.5.0.html">
+<meta property="og:locale" content="de_DE">
+<meta property="og:image" content="https://voxca.de/assets/img/og.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+<link rel="preload" href="/assets/fonts/voxcade-pixel.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="alternate" type="application/atom+xml" href="/de/blog/feed.xml" title="Voxcade · Blog">
+</head>
+<body>
+<a class="skip" href="#content">Zum Inhalt springen</a>
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="/de/">VOXCADE</a>
+    <nav class="nav" aria-label="Abschnitte">
+      <a href="/de/#games">Spiele</a>
+      <a href="/de/#make">Selbst machen</a>
+      <a href="/de/#together">Zusammen</a>
+      <a class="keep" href="/de/#download">Download</a>
+      <a class="keep" href="/de/blog/">Blog</a>
+      <a class="nav-support" href="/de/#support">Unterstützen</a>
+    </nav>
+    <nav class="langs" aria-label="Sprache"><a href="/blog/0.5.0.html" hreflang="en" lang="en" title="English">EN</a> <a href="/de/blog/0.5.0.html" hreflang="de" lang="de" aria-current="true" title="Deutsch">DE</a></nav>
+  </div>
+</header>
+
+<main id="content" class="section page">
+  <article class="wrap post">
+    <p class="post-date"><a href="/de/blog/">Blog</a> · <time datetime="2026-11-11">11. November 2026</time></p>
+    <h1>Voxcade 0.5.0: Geräusche würfeln, Dateien umbenennen</h1>
+    <p class="lead">Geräusche sind jetzt Dateien deines Spiels, und ein Geräuschmacher in der IDE würfelt eine Münze, einen Sprung oder einen Knall. Songs sind Text zum Ändern und Anhören. Die IDE benennt um, löscht und folgt dem Ordner.</p>
+<p>In dieser Version geht es um die IDE: Mehr von einem Spiel entsteht, ohne sie zu verlassen.</p>
+<h2>Geräusche sind Dateien</h2>
+<p>Ein Geräusch ist jetzt eine Datei deines Spiels, <code>sounds/NAME.toml</code>: ein paar Zahlen, je eine Zeile, nur was abweicht. Oder eine Aufnahme, <code>sounds/NAME.wav</code>. Sein Name ist der Dateiname. Die Geräusche, die die Engine mitbringt, stehen auch in der Liste, als „built in“ markiert; MAKE IT YOURS kopiert eins in dein Spiel, damit du es ändern kannst.</p>
+<p>Kommst du von einer älteren Version mit Geräuschen in <code>conf.lua</code> (<code>c.sounds</code>)? <code>voxcade sounds SPIEL --to-files</code> schreibt sie einmal als Dateien.</p>
+<h2>Der Geräuschmacher</h2>
+<p>Öffne ein Geräusch in der IDE, und über seinem Text steht eine Reihe Knöpfe: COIN, JUMP, SHOT, BLAST, HIT, POWER UP, BLIP. Jeder würfelt ein neues Geräusch seiner Sorte und spielt es; noch ein Druck würfelt das nächste. Fünf Regler (PITCH, LENGTH, SLIDE, BRIGHT, PUNCH) formen es, UNDO geht einen Schritt zurück, LOOP spielt es immer wieder, während du änderst. Alles schreibt nur den Text: Was du siehst, spielt das Spiel. Unter dem Text listet USED die Zeilen deines Spiels, die das Geräusch nennen.</p>
+<h2>Songs auch</h2>
+<p>Ein Song (<code>.mml</code>) ist Text, den du in der IDE änderst und der beim Tippen geprüft wird; PLAY SONG spielt ihn, wie er dasteht.</p>
+<h2>Die IDE hält Ordnung</h2>
+<ul class="points"><li><strong>RENAME und DELETE</strong> mit einem Rechtsklick auf eine Datei. Beim Umbenennen bietet die IDE an, die Zeilen deines Spiels zu ändern, die die Datei nennen. DELETE legt in den Papierkorb des Systems, mit UNDO in der Leiste.</li><li><strong>Ein Plus in jeder Überschrift</strong> der Liste legt eine neue Datei der Sorte an: eine Lua-Datei, ein Szenario, ein Modell, ein Geräusch, einen Song.</li><li><strong>Die Liste folgt dem Ordner:</strong> Was ein Agent oder ein anderes Programm anlegt, erscheint von selbst.</li><li><strong>Die Tasten des Spiels</strong> stehen unter dem Spiel, solange es läuft, so wie deine Tastatur sie nennt. AGAIN beginnt es neu; BACK TO THE GAME führt zu einem Spiel zurück, das hinter einer Datei wartet.</li><li><strong>Was am Spiel nicht stimmt,</strong> steht als eine rote Zeile über dem Hauptbereich, mit TO THE LINE.</li><li><strong>BUILD</strong> arbeitet im Hintergrund und legt das Paket in den Ordner <code>builds/</code> deines Spiels.</li><li><strong>NEW</strong> macht jedes Spiel zu einem Git-Repository mit erstem Commit, wo Git installiert ist.</li><li><strong>Kein Agent installiert?</strong> Die Konsole sagt, was ein Agent ist und wo es einen gibt, zum Beispiel Claude Code. Alles andere geht ohne.</li></ul>
+<h2>Das Bild</h2>
+<p>Wasser und Glas aus durchsichtigen Würfeln werden als ein Körper gezeichnet statt als Gitter aus Streifen und zeigen, wie tief sie sind. Gebeugte Arme und Beine von Figuren in Pose flimmern nicht mehr. Ein Mastering-Limiter am Ende des Tons hält laute Momente sauber.</p>
+<h2>So bekommst du sie</h2>
+<p>Starte Voxcade: Der Launcher meldet, dass es 0.5.0 gibt, und UPDATE NOW holt sie. Deine Spiele, Einstellungen und Spielstände bleiben. Neu hier? <a href="/de/#download">Lad es herunter</a> und folg der <a href="/de/install.html">Anleitung</a>.</p>
+    <p class="back"><a href="/de/blog/">Alle Beiträge</a></p>
+  </article>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p>Voxcade wird von <a href="https://sacrvm.dev/">SACRVM</a> gemacht, frei und <a href="https://github.com/SACRVM/voxcade">quelloffen</a>. Keine Cookies, kein Tracking.</p>
+    <p class="foot-links">
+      <a href="https://github.com/sponsors/SACRVM">Voxcade unterstützen</a>
+      <a href="/de/blog/">Blog</a>
+      <a href="/de/imprint.html">Impressum &amp; Datenschutz</a>
+      <span class="langs"><a href="/blog/0.5.0.html" hreflang="en" lang="en" title="English">EN</a> <a href="/de/blog/0.5.0.html" hreflang="de" lang="de" aria-current="true" title="Deutsch">DE</a></span>
+    </p>
+  </div>
+</footer>
+</body>
+</html>
